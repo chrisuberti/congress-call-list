@@ -1,0 +1,542 @@
+name,state,office,district,party,website,phone,email,mailing_address
+Tommy Tuberville,AL,Senator,,R,https://www.tuberville.senate.gov,(202) 224-4124,,"455 Russell Senate Office Building, Washington DC 20510"
+Katie Boyd Britt,AL,Senator,,R,https://www.britt.senate.gov/,(202) 224-5744,,"502 Hart Senate Office Building, Washington DC 20510"
+Lisa Murkowski,AK,Senator,,R,https://www.murkowski.senate.gov/,(202) 224-6665,,"522 Hart Senate Office Building, Washington DC 20510"
+Dan Sullivan,AK,Senator,,R,https://www.sullivan.senate.gov,(202) 224-3004,,"706 Hart Senate Office Building, Washington DC 20510"
+Mark Kelly,AZ,Senator,,D,https://www.kelly.senate.gov,(202) 224-2235,,"516 Hart Senate Office Building, Washington DC 20510"
+Ruben Gallego,AZ,Senator,,D,https://www.gallego.senate.gov/,(202) 224-4521,,"302 Hart Senate Office Building, Washington DC 20510"
+John Boozman,AR,Senator,,R,https://www.boozman.senate.gov/,(202) 224-4843,,"555 Dirksen Senate Office Building, Washington DC 20510"
+Tom Cotton,AR,Senator,,R,https://www.cotton.senate.gov,(202) 224-2353,,"326 Russell Senate Office Building, Washington DC 20510"
+Alex Padilla,CA,Senator,,D,https://www.padilla.senate.gov,(202) 224-3553,,"331 Hart Senate Office Building, Washington DC 20510"
+Adam B. Schiff,CA,Senator,,D,https://www.schiff.senate.gov,(202) 224-3841,,"112 Hart Senate Office Building, Washington DC 20510"
+Michael F. Bennet,CO,Senator,,D,https://www.bennet.senate.gov,(202) 224-5852,,"261 Russell Senate Office Building, Washington DC 20510"
+John W. Hickenlooper,CO,Senator,,D,https://www.hickenlooper.senate.gov,(202) 224-5941,,"316 Hart Senate Office Building, Washington DC 20510"
+Richard Blumenthal,CT,Senator,,D,https://www.blumenthal.senate.gov,(202) 224-2823,,"503 Hart Senate Office Building, Washington DC 20510"
+Christopher Murphy,CT,Senator,,D,https://www.murphy.senate.gov/,(202) 224-4041,,"136 Hart Senate Office Building, Washington DC 20510"
+Christopher A. Coons,DE,Senator,,D,https://www.coons.senate.gov/,(202) 224-5042,,"218 Russell Senate Office Building, Washington DC 20510"
+Lisa Blunt Rochester,DE,Senator,,D,https://www.bluntrochester.senate.gov/,(202) 224-2441,,"513 Hart Senate Office Building, Washington DC 20510"
+Rick Scott,FL,Senator,,R,https://www.rickscott.senate.gov/,(202) 224-5274,,"110 Hart Senate Office Building, Washington DC 20510"
+Ashley Moody,FL,Senator,,R,https://www.moody.senate.gov,(202) 224-3041,,"B40B Dirksen Senate Office Building, Washington DC 20510"
+Jon Ossoff,GA,Senator,,D,https://www.ossoff.senate.gov,(202) 224-3521,,"317 Hart Senate Office Building, Washington DC 20510"
+Raphael G. Warnock,GA,Senator,,D,https://www.warnock.senate.gov,(202) 224-3643,,"717 Hart Senate Office Building, Washington DC 20510"
+Brian Schatz,HI,Senator,,D,https://www.schatz.senate.gov,(202) 224-3934,,"722 Hart Senate Office Building, Washington DC 20510"
+Mazie K. Hirono,HI,Senator,,D,https://www.hirono.senate.gov/,(202) 224-6361,,"109 Hart Senate Office Building, Washington DC 20510"
+Mike Crapo,ID,Senator,,R,https://www.crapo.senate.gov,(202) 224-6142,,"239 Dirksen Senate Office Building, Washington DC 20510"
+James E. Risch,ID,Senator,,R,https://www.risch.senate.gov,(202) 224-2752,,"483 Russell Senate Office Building, Washington DC 20510"
+Richard J. Durbin,IL,Senator,,D,https://www.durbin.senate.gov,(202) 224-2152,,"711 Hart Senate Office Building, Washington DC 20510"
+Tammy Duckworth,IL,Senator,,D,https://www.duckworth.senate.gov,(202) 224-2854,,"524 Hart Senate Office Building, Washington DC 20510"
+Todd Young,IN,Senator,,R,https://www.young.senate.gov,(202) 224-5623,,"185 Dirksen Senate Office Building, Washington DC      20510"
+Jim Banks,IN,Senator,,R,https://www.banks.senate.gov/,(202) 224-4814,,"303 Hart Senate Office Building, Washington DC 20510"
+Chuck Grassley,IA,Senator,,R,https://www.grassley.senate.gov,(202) 224-3744,,"135 Hart Senate Office Building, Washington DC 20510"
+Joni Ernst,IA,Senator,,R,https://www.ernst.senate.gov,(202) 224-3254,,"260 Russell Senate Office Building, Washington DC 20510"
+Jerry Moran,KS,Senator,,R,https://www.moran.senate.gov,(202) 224-6521,,"521 Dirksen Senate Office Building, Washington DC 20510"
+Roger Marshall,KS,Senator,,R,https://www.marshall.senate.gov,(202) 224-4774,,"479A Russell Senate Office Building, Washington DC 20510"
+Mitch McConnell,KY,Senator,,R,https://www.mcconnell.senate.gov/,(202) 224-2541,,"317 Russell Senate Office Building, Washington DC 20510"
+Rand Paul,KY,Senator,,R,https://www.paul.senate.gov,(202) 224-4343,,"295 Russell Senate Office Building, Washington DC 20510"
+Bill Cassidy,LA,Senator,,R,https://www.cassidy.senate.gov,(202) 224-5824,,"455 Dirksen Senate Office Building, Washington DC 20510"
+John Kennedy,LA,Senator,,R,https://www.kennedy.senate.gov,(202) 224-4623,,"437 Russell Senate Office Building, Washington DC 20510"
+Susan M. Collins,ME,Senator,,R,https://www.collins.senate.gov,(202) 224-2523,,"413 Dirksen Senate Office Building, Washington DC 20510"
+"Angus S. King,  Jr.",ME,Senator,,I,https://www.king.senate.gov/,(202) 224-5344,,"133 Hart Senate Office Building, Washington DC 20510"
+Chris Van Hollen,MD,Senator,,D,https://www.vanhollen.senate.gov,(202) 224-4654,,"730 Hart Senate Office Building, Washington DC 20510"
+Angela D. Alsobrooks,MD,Senator,,D,https://alsobrooks.senate.gov/,(202) 224-4524,,"B40E Dirksen Senate Office Building, Washington DC 20510"
+Elizabeth Warren,MA,Senator,,D,https://www.warren.senate.gov,(202) 224-4543,,"311 Hart Senate Office Building, Washington DC 20510"
+Edward J. Markey,MA,Senator,,D,https://www.markey.senate.gov,(202) 224-2742,,"255 Dirksen Senate Office Building, Washington DC 20510"
+Gary C. Peters,MI,Senator,,D,https://www.peters.senate.gov,(202) 224-6221,,"724 Hart Senate Office Building, Washington DC 20510"
+Elissa Slotkin,MI,Senator,,D,https://www.slotkin.senate.gov/,(202) 224-4822,,"291 Russell Senate Office Building, Washington DC 20510"
+Amy Klobuchar,MN,Senator,,D,https://www.klobuchar.senate.gov/,(202) 224-3244,,"425 Dirksen Senate Office Building, Washington DC 20510"
+Tina Smith,MN,Senator,,D,https://www.smith.senate.gov,(202) 224-5641,,"720 Hart Senate Office Building, Washington DC 20510"
+Roger F. Wicker,MS,Senator,,R,https://www.wicker.senate.gov,(202) 224-6253,,"425 Russell Senate Office Building, Washington DC 20510"
+Cindy Hyde-Smith,MS,Senator,,R,https://www.hydesmith.senate.gov/,(202) 224-5054,,"528 Hart Senate Office Building, Washington DC 20510"
+Josh Hawley,MO,Senator,,R,https://www.hawley.senate.gov,(202) 224-6154,,"115 Russell Senate Office Building, Washington DC 20510"
+Eric Schmitt,MO,Senator,,R,https://www.schmitt.senate.gov/,(202) 224-5721,,"387 Russell Senate Office Building, Washington DC 20510"
+Steve Daines,MT,Senator,,R,https://www.daines.senate.gov,(202) 224-2651,,"320 Hart Senate Office Building, Washington DC 20510"
+Tim Sheehy,MT,Senator,,R,https://www.sheehy.senate.gov/,(202) 224-2644,,"G55 Dirksen Senate Office Building, Washington DC 20510"
+Deb Fischer,NE,Senator,,R,https://www.fischer.senate.gov,(202) 224-6551,,"448 Russell Senate Office Building, Washington DC 20510"
+Pete Ricketts,NE,Senator,,R,https://www.ricketts.senate.gov,(202) 224-4224,,"139 Russell Senate Office Building, Washington DC 20510"
+Catherine Cortez Masto,NV,Senator,,D,https://www.cortezmasto.senate.gov,(202) 224-3542,,"309 Hart Senate Office Building, Washington DC 20510"
+Jacky Rosen,NV,Senator,,D,https://www.rosen.senate.gov,(202) 224-6244,,"713 Hart Senate Office Building, Washington DC 20510"
+Jeanne Shaheen,NH,Senator,,D,https://www.shaheen.senate.gov,(202) 224-2841,,"506 Hart Senate Office Building, Washington DC 20510"
+Margaret Wood Hassan,NH,Senator,,D,https://www.hassan.senate.gov,(202) 224-3324,,"324 Hart Senate Office Building, Washington DC 20510"
+Cory A. Booker,NJ,Senator,,D,https://www.booker.senate.gov,(202) 224-3224,,"306 Hart Senate Office Building, Washington DC 20510"
+Andy Kim,NJ,Senator,,D,https://www.kim.senate.gov/,(202) 224-4744,,"520 Hart Senate Office Building, Washington DC 20510"
+Martin Heinrich,NM,Senator,,D,https://www.heinrich.senate.gov/,(202) 224-5521,,"709 Hart Senate Office Building, Washington DC 20510"
+Ben Ray Luján,NM,Senator,,D,https://www.lujan.senate.gov,(202) 224-6621,,"498 Russell Senate Office Building, Washington DC 20510"
+Charles E. Schumer,NY,Senator,,D,https://www.schumer.senate.gov/,(202) 224-6542,,"322 Hart Senate Office Building, Washington DC 20510"
+Kirsten E. Gillibrand,NY,Senator,,D,https://www.gillibrand.senate.gov,(202) 224-4451,,"478 Russell Senate Office Building, Washington DC 20510"
+Thom Tillis,NC,Senator,,R,https://www.tillis.senate.gov,(202) 224-6342,,"113 Dirksen Senate Office Building, Washington DC 20510"
+Ted Budd,NC,Senator,,R,https://www.budd.senate.gov/,(202) 224-3154,,"354 Russell Senate Office Building, Washington DC 20510"
+John Hoeven,ND,Senator,,R,https://www.hoeven.senate.gov,(202) 224-2551,,"338 Russell Senate Office Building, Washington DC 20510"
+Kevin Cramer,ND,Senator,,R,https://www.cramer.senate.gov,(202) 224-2043,,"313 Hart Senate Office Building, Washington DC 20510"
+Bernie Moreno,OH,Senator,,R,https://www.moreno.senate.gov,,,
+Jon Husted,OH,Senator,,R,https://www.husted.senate.gov/,,,
+James Lankford,OK,Senator,,R,https://www.lankford.senate.gov,(202) 224-5754,,"731 Hart Senate Office Building, Washington DC 20510"
+Markwayne Mullin,OK,Senator,,R,https://www.mullin.senate.gov/,(202) 224-4721,,"330 Hart Senate Office Building, Washington DC 20510"
+Ron Wyden,OR,Senator,,D,https://www.wyden.senate.gov/,(202) 224-5244,,"221 Dirksen Senate Office Building, Washington DC 20510"
+Jeff Merkley,OR,Senator,,D,https://www.merkley.senate.gov,(202) 224-3753,,"531 Hart Senate Office Building, Washington DC 20510"
+John Fetterman,PA,Senator,,D,https://www.fetterman.senate.gov/,(202) 224-4254,,"142 Russell Senate Office Building, Washington DC 20510"
+David McCormick,PA,Senator,,R,https://mccormick.senate.gov/,(202) 224-6324,,"702 Hart Senate Office Building, Washington DC 20510"
+Jack Reed,RI,Senator,,D,https://www.reed.senate.gov/,(202) 224-4642,,"728 Hart Senate Office Building, Washington DC 20510"
+Sheldon Whitehouse,RI,Senator,,D,https://www.whitehouse.senate.gov/,(202) 224-2921,,"530 Hart Senate Office Building, Washington DC 20510"
+Lindsey Graham,SC,Senator,,R,https://www.lgraham.senate.gov/,(202) 224-5972,,"211 Russell Senate Office Building, Washington DC 20510"
+Tim Scott,SC,Senator,,R,https://www.scott.senate.gov/,(202) 224-6121,,"104 Hart Senate Office Building, Washington DC 20510"
+John Thune,SD,Senator,,R,https://www.thune.senate.gov/,(202) 224-2321,,"511 Dirksen Senate Office Building, Washington DC 20510"
+Mike Rounds,SD,Senator,,R,https://www.rounds.senate.gov,(202) 224-5842,,"716 Hart Senate Office Building, Washington DC 20510"
+Marsha Blackburn,TN,Senator,,R,https://www.blackburn.senate.gov,(202) 224-3344,,"357 Dirksen Senate Office Building, Washington DC 20510"
+Bill Hagerty,TN,Senator,,R,https://www.hagerty.senate.gov,(202) 224-4944,,"251 Russell Senate Office Building, Washington DC 20510"
+John Cornyn,TX,Senator,,R,https://www.cornyn.senate.gov/,(202) 224-2934,,"517 Hart Senate Office Building, Washington DC 20510"
+Ted Cruz,TX,Senator,,R,https://www.cruz.senate.gov,(202) 224-5922,,"167 Russell Senate Office Building, Washington DC 20510"
+Mike Lee,UT,Senator,,R,https://www.lee.senate.gov/,(202) 224-5444,,"363 Russell Senate Office Building, Washington DC 20510"
+John R. Curtis,UT,Senator,,R,https://www.curtis.senate.gov/,(202) 224-5251,,"B11 Russell Senate Office Building, Washington DC 20510"
+Bernard Sanders,VT,Senator,,I,https://www.sanders.senate.gov/,(202) 224-5141,,"332 Dirksen Senate Office Building, Washington DC 20510"
+Peter Welch,VT,Senator,,D,https://www.welch.senate.gov/,(202) 224-4242,,"124 Russell Senate Office Building, Washington DC 20510"
+Mark R. Warner,VA,Senator,,D,https://www.warner.senate.gov,(202) 224-2023,,"703 Hart Senate Office Building, Washington DC 20510"
+Tim Kaine,VA,Senator,,D,https://www.kaine.senate.gov/,(202) 224-4024,,"231 Russell Senate Office Building, Washington DC 20510"
+Patty Murray,WA,Senator,,D,https://www.murray.senate.gov/,(202) 224-2621,,"154 Russell Senate Office Building, Washington DC 20510"
+Maria Cantwell,WA,Senator,,D,https://www.cantwell.senate.gov,(202) 224-3441,,"511 Hart Senate Office Building, Washington DC 20510"
+Shelley Moore Capito,WV,Senator,,R,https://www.capito.senate.gov,(202) 224-6472,,"170 Russell Senate Office Building, Washington DC 20510"
+James C. Justice,WV,Senator,,R,https://www.justice.senate.gov/,(202) 224-3954,,"G12 Dirksen Senate Office Building, Washington DC 20510"
+Ron Johnson,WI,Senator,,R,https://www.ronjohnson.senate.gov/,(202) 224-5323,,"328 Hart Senate Office Building, Washington DC 20510"
+Tammy Baldwin,WI,Senator,,D,https://www.baldwin.senate.gov/,(202) 224-5653,,"141 Hart Senate Office Building, Washington DC 20510"
+John Barrasso,WY,Senator,,R,https://www.barrasso.senate.gov,(202) 224-6441,,"307 Dirksen Senate Office Building, Washington DC 20510"
+Cynthia M. Lummis,WY,Senator,,R,https://www.lummis.senate.gov,(202) 224-3424,,"127A Russell Senate Office Building, Washington DC 20510"
+"Moore, Barry",AL,Representative,1st,R,https://barrymoore.house.gov,(202) 225-2901,,1511 LHOB
+"Figures, Shomari",AL,Representative,2nd,D,https://figures.house.gov/,(202) 225-4931,,225 CHOB
+"Rogers, Mike",AL,Representative,3rd,R,https://mikerogers.house.gov/,(202) 225-3261,,2469 RHOB
+"Aderholt, Robert",AL,Representative,4th,R,https://aderholt.house.gov/,(202) 225-4876,,272 CHOB
+"Strong, Dale",AL,Representative,5th,R,https://strong.house.gov,(202) 225-4801,,449 CHOB
+"Palmer, Gary",AL,Representative,6th,R,https://palmer.house.gov/,(202) 225-4921,,170 CHOB
+"Sewell, Terri",AL,Representative,7th,D,https://sewell.house.gov/,(202) 225-2665,,1035 LHOB
+"Begich, Nicholas",AK,Representative,At Large,R,https://begich.house.gov/,(202) 225-5765,,153 CHOB
+"Radewagen, Aumua Amata",,Representative,Delegate,R,https://radewagen.house.gov,(202) 225-8577,,2001 RHOB
+"Schweikert, David",AZ,Representative,1st,R,https://schweikert.house.gov/,(202) 225-2190,,166 CHOB
+"Crane, Elijah",AZ,Representative,2nd,R,https://crane.house.gov,(202) 225-3361,,307 CHOB
+"Ansari, Yassamin",AZ,Representative,3rd,D,https://ansari.house.gov/,(202) 225-4065,,1432 LHOB
+"Stanton, Greg",AZ,Representative,4th,D,https://stanton.house.gov/,(202) 225-9888,,207 CHOB
+"Biggs, Andy",AZ,Representative,5th,R,https://biggs.house.gov,(202) 225-2635,,464 CHOB
+"Ciscomani, Juan",AZ,Representative,6th,R,https://ciscomani.house.gov,(202) 225-2542,,461 CHOB
+"Grijalva, Raúl M.- Vacancy",AZ,Representative,7th,D,https://clerk.house.gov/members/AZ07/vacancy,(202) 225-2435,,1203 LHOB
+"Hamadeh, Abraham",AZ,Representative,8th,R,https://hamadeh.house.gov/,(202) 225-4576,,1722 LHOB
+"Gosar, Paul",AZ,Representative,9th,R,https://gosar.house.gov/,(202) 225-2315,,2057 RHOB
+"Crawford, Eric",AR,Representative,1st,R,https://crawford.house.gov/,(202) 225-4076,,2422 RHOB
+"Hill, J.",AR,Representative,2nd,R,https://hill.house.gov/,(202) 225-2506,,1533 LHOB
+"Womack, Steve",AR,Representative,3rd,R,https://womack.house.gov/,(202) 225-4301,,2412 RHOB
+"Westerman, Bruce",AR,Representative,4th,R,https://westerman.house.gov/,(202) 225-3772,,202 CHOB
+"LaMalfa, Doug",CA,Representative,1st,R,https://lamalfa.house.gov,(202) 225-3076,,408 CHOB
+"Huffman, Jared",CA,Representative,2nd,D,https://huffman.house.gov,(202) 225-5161,,2330 RHOB
+"Kiley, Kevin",CA,Representative,3rd,R,https://kiley.house.gov,(202) 225-2523,,2445 RHOB
+"Thompson, Mike",CA,Representative,4th,D,https://mikethompson.house.gov/,(202) 225-3311,,268 CHOB
+"McClintock, Tom",CA,Representative,5th,R,https://mcclintock.house.gov/,(202) 225-2511,,2256 RHOB
+"Bera, Ami",CA,Representative,6th,D,https://bera.house.gov,(202) 225-5716,,172 CHOB
+"Matsui, Doris",CA,Representative,7th,D,https://matsui.house.gov,(202) 225-7163,,2206 RHOB
+"Garamendi, John",CA,Representative,8th,D,https://garamendi.house.gov/,(202) 225-1880,,2428 RHOB
+"Harder, Josh",CA,Representative,9th,D,https://harder.house.gov/,(202) 225-4540,,209 CHOB
+"DeSaulnier, Mark",CA,Representative,10th,D,https://desaulnier.house.gov/,(202) 225-2095,,2134 RHOB
+"Pelosi, Nancy",CA,Representative,11th,D,https://pelosi.house.gov/,(202) 225-4965,,1236 LHOB
+"Simon, Lateefah",CA,Representative,12th,D,https://simon.house.gov/,(202) 225-2661,,1023 LHOB
+"Gray, Adam",CA,Representative,13th,D,https://gray.house.gov/,(202) 225-1947,,1230 LHOB
+"Swalwell, Eric",CA,Representative,14th,D,https://swalwell.house.gov,(202) 225-5065,,174 CHOB
+"Mullin, Kevin",CA,Representative,15th,D,https://kevinmullin.house.gov,(202) 225-3531,,1404 LHOB
+"Liccardo, Sam",CA,Representative,16th,D,https://liccardo.house.gov/,(202) 225-8104,,1117 LHOB
+"Khanna, Ro",CA,Representative,17th,D,https://khanna.house.gov,(202) 225-2631,,306 CHOB
+"Lofgren, Zoe",CA,Representative,18th,D,https://lofgren.house.gov/,(202) 225-3072,,1401 LHOB
+"Panetta, Jimmy",CA,Representative,19th,D,https://panetta.house.gov,(202) 225-2861,,200 CHOB
+"Fong, Vince",CA,Representative,20th,R,https://fong.house.gov/,(202) 225-2915,,243 CHOB
+"Costa, Jim",CA,Representative,21st,D,https://costa.house.gov/,(202) 225-3341,,2081 RHOB
+"Valadao, David",CA,Representative,22nd,R,https://valadao.house.gov,(202) 225-4695,,2465 RHOB
+"Obernolte, Jay",CA,Representative,23rd,R,https://obernolte.house.gov,(202) 225-5861,,2433 RHOB
+"Carbajal, Salud",CA,Representative,24th,D,https://carbajal.house.gov,(202) 225-3601,,2331 RHOB
+"Ruiz, Raul",CA,Representative,25th,D,https://ruiz.house.gov,(202) 225-5330,,2342 RHOB
+"Brownley, Julia",CA,Representative,26th,D,https://juliabrownley.house.gov,(202) 225-5811,,2262 RHOB
+"Whitesides, George",CA,Representative,27th,D,https://whitesides.house.gov/,(202) 225-1956,,1504 LHOB
+"Chu, Judy",CA,Representative,28th,D,https://chu.house.gov/,(202) 225-5464,,2423 RHOB
+"Rivas, Luz",CA,Representative,29th,D,https://rivas.house.gov/,(202) 225-6131,,1319 LHOB
+"Friedman, Laura",CA,Representative,30th,D,https://friedman.house.gov/,(202) 225-4176,,1517 LHOB
+"Cisneros, Gilbert",CA,Representative,31st,D,https://cisneros.house.gov/,(202) 225-5256,,2463 RHOB
+"Sherman, Brad",CA,Representative,32nd,D,https://sherman.house.gov,(202) 225-5911,,2365 RHOB
+"Aguilar, Pete",CA,Representative,33rd,D,https://aguilar.house.gov/,(202) 225-3201,,108 CHOB
+"Gomez, Jimmy",CA,Representative,34th,D,https://gomez.house.gov/,(202) 225-6235,,506 CHOB
+"Torres, Norma",CA,Representative,35th,D,https://torres.house.gov/,(202) 225-6161,,2227 RHOB
+"Lieu, Ted",CA,Representative,36th,D,https://lieu.house.gov/,(202) 225-3976,,2454 RHOB
+"Kamlager-Dove, Sydney",CA,Representative,37th,D,https://kamlager-dove.house.gov,(202) 225-7084,,144 CHOB
+"Sanchez, Linda",CA,Representative,38th,D,https://lindasanchez.house.gov/,(202) 225-6676,,2309 RHOB
+"Takano, Mark",CA,Representative,39th,D,https://takano.house.gov,(202) 225-2305,,2078 RHOB
+"Kim, Young",CA,Representative,40th,R,https://youngkim.house.gov,(202) 225-4111,,2439 RHOB
+"Calvert, Ken",CA,Representative,41st,R,https://calvert.house.gov/,(202) 225-1986,,2205 RHOB
+"Garcia, Robert",CA,Representative,42nd,D,https://robertgarcia.house.gov,(202) 225-7924,,109 CHOB
+"Waters, Maxine",CA,Representative,43rd,D,https://waters.house.gov,(202) 225-2201,,2221 RHOB
+"Barragan, Nanette",CA,Representative,44th,D,https://barragan.house.gov,(202) 225-8220,,2312 RHOB
+"Tran, Derek",CA,Representative,45th,D,https://tran.house.gov/,(202) 225-2415,,1127 LHOB
+"Correa, J.",CA,Representative,46th,D,https://correa.house.gov,(202) 225-2965,,2082 RHOB
+"Min, Dave",CA,Representative,47th,D,https://min.house.gov/,(202) 225-5611,,1034 LHOB
+"Issa, Darrell",CA,Representative,48th,R,https://issa.house.gov,(202) 225-5672,,2108 RHOB
+"Levin, Mike",CA,Representative,49th,D,https://levin.house.gov/,(202) 225-3906,,2352 RHOB
+"Peters, Scott",CA,Representative,50th,D,https://scottpeters.house.gov,(202) 225-0508,,2369 RHOB
+"Jacobs, Sara",CA,Representative,51st,D,https://sarajacobs.house.gov,(202) 225-2040,,2348 RHOB
+"Vargas, Juan",CA,Representative,52nd,D,https://vargas.house.gov,(202) 225-8045,,2467 RHOB
+"DeGette, Diana",CO,Representative,1st,D,https://degette.house.gov,(202) 225-4431,,2111 RHOB
+"Neguse, Joe",CO,Representative,2nd,D,https://neguse.house.gov/,(202) 225-2161,,2400 RHOB
+"Hurd, Jeff",CO,Representative,3rd,R,https://hurd.house.gov/,(202) 225-4676,,1641 LHOB
+"Boebert, Lauren",CO,Representative,4th,R,https://boebert.house.gov,(202) 225-4761,,1713 LHOB
+"Crank, Jeff",CO,Representative,5th,R,https://crank.house.gov/,(202) 225-4422,,1029 LHOB
+"Crow, Jason",CO,Representative,6th,D,https://crow.house.gov/,(202) 225-7882,,1323 LHOB
+"Pettersen, Brittany",CO,Representative,7th,D,https://pettersen.house.gov,(202) 225-2645,,348 CHOB
+"Evans, Gabe",CO,Representative,8th,R,https://gabeevans.house.gov/,(202) 225-5625,,1229 LHOB
+"Larson, John",CT,Representative,1st,D,https://larson.house.gov/,(202) 225-2265,,1501 LHOB
+"Courtney, Joe",CT,Representative,2nd,D,https://courtney.house.gov/,(202) 225-2076,,2449 RHOB
+"DeLauro, Rosa",CT,Representative,3rd,D,https://delauro.house.gov/,(202) 225-3661,,2413 RHOB
+"Himes, James",CT,Representative,4th,D,https://himes.house.gov/,(202) 225-5541,,2137 RHOB
+"Hayes, Jahana",CT,Representative,5th,D,https://hayes.house.gov,(202) 225-4476,,2049 RHOB
+"McBride, Sarah",DE,Representative,At Large,D,https://mcbride.house.gov/,(202) 225-4165,,1306 LHOB
+"Norton, Eleanor",DC,Representative,Delegate,D,https://norton.house.gov/,(202) 225-8050,,2136 RHOB
+"Gaetz, Matt- Vacancy",FL,Representative,1st,R,https://clerk.house.gov/members/FL01/vacancy,(202) 225-4136,,2021 RHOB
+"Dunn, Neal",FL,Representative,2nd,R,https://dunn.house.gov,(202) 225-5235,,466 CHOB
+"Cammack, Kat",FL,Representative,3rd,R,https://cammack.house.gov,(202) 225-5744,,2421 RHOB
+"Bean, Aaron",FL,Representative,4th,R,https://bean.house.gov,(202) 225-0123,,2459 RHOB
+"Rutherford, John",FL,Representative,5th,R,https://rutherford.house.gov,(202) 225-2501,,1711 LHOB
+"Waltz, Michael- Vacancy",FL,Representative,6th,R,https://clerk.house.gov/members/FL06/vacancy,(202) 225-2706,,244 CHOB
+"Mills, Cory",FL,Representative,7th,R,https://mills.house.gov,(202) 225-4035,,346 CHOB
+"Haridopolos, Mike",FL,Representative,8th,R,https://haridopolos.house.gov/,(202) 225-3671,,1039 LHOB
+"Soto, Darren",FL,Representative,9th,D,https://soto.house.gov,(202) 225-9889,,2353 RHOB
+"Frost, Maxwell",FL,Representative,10th,D,https://frost.house.gov,(202) 225-2176,,1224 LHOB
+"Webster, Daniel",FL,Representative,11th,R,https://webster.house.gov/,(202) 225-1002,,2184 RHOB
+"Bilirakis, Gus",FL,Representative,12th,R,https://bilirakis.house.gov/,(202) 225-5755,,2306 RHOB
+"Luna, Anna Paulina",FL,Representative,13th,R,https://luna.house.gov,(202) 225-5961,,226 CHOB
+"Castor, Kathy",FL,Representative,14th,D,https://castor.house.gov/,(202) 225-3376,,2188 RHOB
+"Lee, Laurel",FL,Representative,15th,R,https://laurellee.house.gov,(202) 225-5626,,2464 RHOB
+"Buchanan, Vern",FL,Representative,16th,R,https://buchanan.house.gov/,(202) 225-5015,,2409 RHOB
+"Steube, W.",FL,Representative,17th,R,https://steube.house.gov/,(202) 225-5792,,2457 RHOB
+"Franklin, Scott",FL,Representative,18th,R,https://franklin.house.gov,(202) 225-1252,,2301 RHOB
+"Donalds, Byron",FL,Representative,19th,R,https://donalds.house.gov,(202) 225-2536,,1710 LHOB
+"Cherfilus-McCormick, Sheila",FL,Representative,20th,D,https://cherfilus-mccormick.house.gov/,(202) 225-1313,,2442 RHOB
+"Mast, Brian",FL,Representative,21st,R,https://mast.house.gov,(202) 225-3026,,2182 RHOB
+"Frankel, Lois",FL,Representative,22nd,D,https://frankel.house.gov,(202) 225-9890,,2305 RHOB
+"Moskowitz, Jared",FL,Representative,23rd,D,https://moskowitz.house.gov,(202) 225-3001,,242 CHOB
+"Wilson, Frederica",FL,Representative,24th,D,https://wilson.house.gov/,(202) 225-4506,,2080 RHOB
+"Wasserman Schultz, Debbie",FL,Representative,25th,D,https://wassermanschultz.house.gov/,(202) 225-7931,,270 CHOB
+"Diaz-Balart, Mario",FL,Representative,26th,R,https://mariodiazbalart.house.gov/,(202) 225-4211,,374 CHOB
+"Salazar, Maria",FL,Representative,27th,R,https://salazar.house.gov,(202) 225-3931,,2162 RHOB
+"Gimenez, Carlos",FL,Representative,28th,R,https://gimenez.house.gov,(202) 225-2778,,448 CHOB
+"Carter, Earl",GA,Representative,1st,R,https://buddycarter.house.gov/,(202) 225-5831,,2432 RHOB
+"Bishop, Sanford",GA,Representative,2nd,D,https://bishop.house.gov/,(202) 225-3631,,2407 RHOB
+"Jack, Brian",GA,Representative,3rd,R,https://jack.house.gov/,(202) 225-5901,,1320 LHOB
+"Johnson, Henry",GA,Representative,4th,D,https://hankjohnson.house.gov/,(202) 225-1605,,2240 RHOB
+"Williams, Nikema",GA,Representative,5th,D,https://nikemawilliams.house.gov,(202) 225-3801,,1406 LHOB
+"McBath, Lucy",GA,Representative,6th,D,https://mcbath.house.gov,(202) 225-4501,,2246 RHOB
+"McCormick, Richard",GA,Representative,7th,R,https://mccormick.house.gov,(202) 225-4272,,1719 LHOB
+"Scott, Austin",GA,Representative,8th,R,https://austinscott.house.gov/,(202) 225-6531,,2185 RHOB
+"Clyde, Andrew",GA,Representative,9th,R,https://clyde.house.gov,(202) 225-9893,,445 CHOB
+"Collins, Mike",GA,Representative,10th,R,https://collins.house.gov,(202) 225-4101,,2351 RHOB
+"Loudermilk, Barry",GA,Representative,11th,R,https://loudermilk.house.gov,(202) 225-2931,,2133 RHOB
+"Allen, Rick",GA,Representative,12th,R,https://allen.house.gov,(202) 225-2823,,462 CHOB
+"Scott, David",GA,Representative,13th,D,https://davidscott.house.gov/,(202) 225-2939,,468 CHOB
+"Greene, Marjorie",GA,Representative,14th,R,https://greene.house.gov,(202) 225-5211,,2201 RHOB
+"Moylan, James",,Representative,Delegate,R,https://moylan.house.gov,(202) 225-1188,,228 CHOB
+"Case, Ed",HI,Representative,1st,D,https://case.house.gov/,(202) 225-2726,,2210 RHOB
+"Tokuda, Jill",HI,Representative,2nd,D,https://tokuda.house.gov,(202) 225-4906,,1027 LHOB
+"Fulcher, Russ",ID,Representative,1st,R,https://fulcher.house.gov/,(202) 225-6611,,1514 LHOB
+"Simpson, Michael",ID,Representative,2nd,R,https://simpson.house.gov,(202) 225-5531,,2084 RHOB
+"Jackson, Jonathan",IL,Representative,1st,D,https://jonathanjackson.house.gov,(202) 225-4372,,1632 LHOB
+"Kelly, Robin",IL,Representative,2nd,D,https://robinkelly.house.gov/,(202) 225-0773,,2329 RHOB
+"Ramirez, Delia",IL,Representative,3rd,D,https://ramirez.house.gov,(202) 225-5701,,1523 LHOB
+"Garcia, Jesus",IL,Representative,4th,D,https://chuygarcia.house.gov/,(202) 225-8203,,2334 RHOB
+"Quigley, Mike",IL,Representative,5th,D,https://quigley.house.gov/,(202) 225-4061,,2083 RHOB
+"Casten, Sean",IL,Representative,6th,D,https://casten.house.gov,(202) 225-4561,,2440 RHOB
+"Davis, Danny",IL,Representative,7th,D,https://davis.house.gov,(202) 225-5006,,2159 RHOB
+"Krishnamoorthi, Raja",IL,Representative,8th,D,https://krishnamoorthi.house.gov,(202) 225-3711,,2367 RHOB
+"Schakowsky, Janice",IL,Representative,9th,D,https://schakowsky.house.gov,(202) 225-2111,,2408 RHOB
+"Schneider, Bradley",IL,Representative,10th,D,https://schneider.house.gov,(202) 225-4835,,300 CHOB
+"Foster, Bill",IL,Representative,11th,D,https://foster.house.gov,(202) 225-3515,,2366 RHOB
+"Bost, Mike",IL,Representative,12th,R,https://bost.house.gov/,(202) 225-5661,,352 CHOB
+"Budzinski, Nikki",IL,Representative,13th,D,https://budzinski.house.gov,(202) 225-2371,,1717 LHOB
+"Underwood, Lauren",IL,Representative,14th,D,https://underwood.house.gov/,(202) 225-2976,,2228 RHOB
+"Miller, Mary",IL,Representative,15th,R,https://marymiller.house.gov,(202) 225-5271,,1740 LHOB
+"LaHood, Darin",IL,Representative,16th,R,https://lahood.house.gov/,(202) 225-6201,,503 CHOB
+"Sorensen, Eric",IL,Representative,17th,D,https://sorensen.house.gov,(202) 225-5905,,1314 LHOB
+"Mrvan, Frank",IN,Representative,1st,D,https://mrvan.house.gov,(202) 225-2461,,2441 RHOB
+"Yakym, Rudy",IN,Representative,2nd,R,https://yakym.house.gov,(202) 225-3915,,349 CHOB
+"Stutzman, Marlin",IN,Representative,3rd,R,https://stutzman.house.gov/,(202) 225-4436,,404 CHOB
+"Baird, James",IN,Representative,4th,R,https://baird.house.gov/,(202) 225-5037,,2303 RHOB
+"Spartz, Victoria",IN,Representative,5th,R,https://spartz.house.gov,(202) 225-2276,,1609 LHOB
+"Shreve, Jefferson",IN,Representative,6th,R,https://shreve.house.gov/,(202) 225-3021,,224 CHOB
+"Carson, Andre",IN,Representative,7th,D,https://carson.house.gov/,(202) 225-4011,,2135 RHOB
+"Messmer, Mark",IN,Representative,8th,R,https://messmer.house.gov/,(202) 225-4636,,1208 LHOB
+"Houchin, Erin",IN,Representative,9th,R,https://houchin.house.gov,(202) 225-5315,,342 CHOB
+"Miller-Meeks, Mariannette",IA,Representative,1st,R,https://millermeeks.house.gov/,(202) 225-6576,,504 CHOB
+"Hinson, Ashley",IA,Representative,2nd,R,https://hinson.house.gov,(202) 225-2911,,2458 RHOB
+"Nunn, Zachary",IA,Representative,3rd,R,https://nunn.house.gov,(202) 225-5476,,1410 LHOB
+"Feenstra, Randy",IA,Representative,4th,R,https://feenstra.house.gov,(202) 225-4426,,2434 RHOB
+"Mann, Tracey",KS,Representative,1st,R,https://mann.house.gov,(202) 225-2715,,344 CHOB
+"Schmidt, Derek",KS,Representative,2nd,R,https://schmidt.house.gov/,(202) 225-6601,,1223 LHOB
+"Davids, Sharice",KS,Representative,3rd,D,https://davids.house.gov/,(202) 225-2865,,2435 RHOB
+"Estes, Ron",KS,Representative,4th,R,https://estes.house.gov/,(202) 225-6216,,2234 RHOB
+"Comer, James",KY,Representative,1st,R,https://comer.house.gov/,(202) 225-3115,,2410 RHOB
+"Guthrie, Brett",KY,Representative,2nd,R,https://guthrie.house.gov/,(202) 225-3501,,2161 RHOB
+"McGarvey, Morgan",KY,Representative,3rd,D,https://mcgarvey.house.gov,(202) 225-5401,,1527 LHOB
+"Massie, Thomas",KY,Representative,4th,R,https://massie.house.gov,(202) 225-3465,,2371 RHOB
+"Rogers, Harold",KY,Representative,5th,R,https://halrogers.house.gov/,(202) 225-4601,,2406 RHOB
+"Barr, Andy",KY,Representative,6th,R,https://barr.house.gov/,(202) 225-4706,,2430 RHOB
+"Scalise, Steve",LA,Representative,1st,R,https://scalise.house.gov/,(202) 225-3015,,266 CHOB
+"Carter, Troy",LA,Representative,2nd,D,https://troycarter.house.gov,(202) 225-6636,,442 CHOB
+"Higgins, Clay",LA,Representative,3rd,R,https://clayhiggins.house.gov,(202) 225-2031,,572 CHOB
+"Johnson, Mike",LA,Representative,4th,R,https://mikejohnson.house.gov,(202) 225-2777,,568 CHOB
+"Letlow, Julia",LA,Representative,5th,R,https://letlow.house.gov,(202) 225-8490,,142 CHOB
+"Fields, Cleo",LA,Representative,6th,D,https://fields.house.gov/,(202) 225-3901,,2349 RHOB
+"Pingree, Chellie",ME,Representative,1st,D,https://pingree.house.gov/,(202) 225-6116,,2354 RHOB
+"Golden, Jared",ME,Representative,2nd,D,https://golden.house.gov,(202) 225-6306,,1107 LHOB
+"Harris, Andy",MD,Representative,1st,R,https://harris.house.gov/,(202) 225-5311,,1536 LHOB
+"Olszewski, Johnny",MD,Representative,2nd,D,https://olszewski.house.gov/,(202) 225-3061,,1339 LHOB
+"Elfreth, Sarah",MD,Representative,3rd,D,https://elfreth.house.gov/,(202) 225-4016,,1213 LHOB
+"Ivey, Glenn",MD,Representative,4th,D,https://ivey.house.gov,(202) 225-8699,,1610 LHOB
+"Hoyer, Steny",MD,Representative,5th,D,https://hoyer.house.gov/,(202) 225-4131,,1705 LHOB
+"McClain Delaney, April",MD,Representative,6th,D,https://mcclaindelaney.house.gov/,(202) 225-2721,,1130 LHOB
+"Mfume, Kweisi",MD,Representative,7th,D,https://mfume.house.gov/,(202) 225-4741,,2263 RHOB
+"Raskin, Jamie",MD,Representative,8th,D,https://raskin.house.gov,(202) 225-5341,,2242 RHOB
+"Neal, Richard",MA,Representative,1st,D,https://neal.house.gov/,(202) 225-5601,,372 CHOB
+"McGovern, James",MA,Representative,2nd,D,https://mcgovern.house.gov/,(202) 225-6101,,370 CHOB
+"Trahan, Lori",MA,Representative,3rd,D,https://trahan.house.gov,(202) 225-3411,,2233 RHOB
+"Auchincloss, Jake",MA,Representative,4th,D,https://auchincloss.house.gov,(202) 225-5931,,1524 LHOB
+"Clark, Katherine",MA,Representative,5th,D,https://katherineclark.house.gov/index.cfm/home,(202) 225-2836,,2368 RHOB
+"Moulton, Seth",MA,Representative,6th,D,https://moulton.house.gov/,(202) 225-8020,,1126 LHOB
+"Pressley, Ayanna",MA,Representative,7th,D,https://pressley.house.gov,(202) 225-5111,,402 CHOB
+"Lynch, Stephen",MA,Representative,8th,D,https://lynch.house.gov/,(202) 225-8273,,2109 RHOB
+"Keating, William",MA,Representative,9th,D,https://keating.house.gov/,(202) 225-3111,,2372 RHOB
+"Bergman, Jack",MI,Representative,1st,R,https://bergman.house.gov,(202) 225-4735,,566 CHOB
+"Moolenaar, John",MI,Representative,2nd,R,https://moolenaar.house.gov/,(202) 225-3561,,246 CHOB
+"Scholten, Hillary",MI,Representative,3rd,D,https://scholten.house.gov,(202) 225-3831,,1317 LHOB
+"Huizenga, Bill",MI,Representative,4th,R,https://huizenga.house.gov/,(202) 225-4401,,2232 RHOB
+"Walberg, Tim",MI,Representative,5th,R,https://walberg.house.gov/,(202) 225-6276,,2266 RHOB
+"Dingell, Debbie",MI,Representative,6th,D,https://debbiedingell.house.gov/,(202) 225-4071,,102 CHOB
+"Barrett, Tom",MI,Representative,7th,R,https://barrett.house.gov/,(202) 225-4872,,1232 LHOB
+"McDonald Rivet, Kristen",MI,Representative,8th,D,https://mcdonaldrivet.house.gov/,(202) 225-3611,,1408 LHOB
+"McClain, Lisa",MI,Representative,9th,R,https://mcclain.house.gov,(202) 225-2106,,562 CHOB
+"James, John",MI,Representative,10th,R,https://james.house.gov,(202) 225-4961,,1519 LHOB
+"Stevens, Haley",MI,Representative,11th,D,https://stevens.house.gov/,(202) 225-8171,,2411 RHOB
+"Tlaib, Rashida",MI,Representative,12th,D,https://tlaib.house.gov/,(202) 225-5126,,2438 RHOB
+"Thanedar, Shri",MI,Representative,13th,D,https://thanedar.house.gov,(202) 225-5802,,154 CHOB
+"Finstad, Brad",MN,Representative,1st,R,https://finstad.house.gov/,(202) 225-2472,,2418 RHOB
+"Craig, Angie",MN,Representative,2nd,D,https://craig.house.gov,(202) 225-2271,,2052 RHOB
+"Morrison, Kelly",MN,Representative,3rd,D,https://morrison.house.gov/,(202) 225-2871,,1205 LHOB
+"McCollum, Betty",MN,Representative,4th,D,https://mccollum.house.gov,(202) 225-6631,,2426 RHOB
+"Omar, Ilhan",MN,Representative,5th,D,https://omar.house.gov/,(202) 225-4755,,1730 LHOB
+"Emmer, Tom",MN,Representative,6th,R,https://emmer.house.gov/,(202) 225-2331,,326 CHOB
+"Fischbach, Michelle",MN,Representative,7th,R,https://fischbach.house.gov,(202) 225-2165,,2229 RHOB
+"Stauber, Pete",MN,Representative,8th,R,https://stauber.house.gov,(202) 225-6211,,145 CHOB
+"Kelly, Trent",MS,Representative,1st,R,https://trentkelly.house.gov/,(202) 225-4306,,2243 RHOB
+"Thompson, Bennie",MS,Representative,2nd,D,https://benniethompson.house.gov/,(202) 225-5876,,2466 RHOB
+"Guest, Michael",MS,Representative,3rd,R,https://guest.house.gov,(202) 225-5031,,450 CHOB
+"Ezell, Mike",MS,Representative,4th,R,https://ezell.house.gov,(202) 225-5772,,443 CHOB
+"Bell, Wesley",MO,Representative,1st,D,https://bell.house.gov/,(202) 225-2406,,1429 LHOB
+"Wagner, Ann",MO,Representative,2nd,R,https://wagner.house.gov,(202) 225-1621,,2350 RHOB
+"Onder, Robert",MO,Representative,3rd,R,https://onder.house.gov/,(202) 225-2956,,1113 LHOB
+"Alford, Mark",MO,Representative,4th,R,https://alford.house.gov,(202) 225-2876,,328 CHOB
+"Cleaver, Emanuel",MO,Representative,5th,D,https://cleaver.house.gov,(202) 225-4535,,2217 RHOB
+"Graves, Sam",MO,Representative,6th,R,https://graves.house.gov/,(202) 225-7041,,1135 LHOB
+"Burlison, Eric",MO,Representative,7th,R,https://burlison.house.gov,(202) 225-6536,,1108 LHOB
+"Smith, Jason",MO,Representative,8th,R,https://jasonsmith.house.gov,(202) 225-4404,,1011 LHOB
+"Zinke, Ryan",MT,Representative,1st,R,https://zinke.house.gov,(202) 225-5628,,512 CHOB
+"Downing, Troy",MT,Representative,2nd,R,https://downing.house.gov/,(202) 225-3211,,1529 LHOB
+"Flood, Mike",NE,Representative,1st,R,https://flood.house.gov/,(202) 225-4806,,343 CHOB
+"Bacon, Don",NE,Representative,2nd,R,https://bacon.house.gov,(202) 225-4155,,2104 RHOB
+"Smith, Adrian",NE,Representative,3rd,R,https://adriansmith.house.gov/,(202) 225-6435,,502 CHOB
+"Titus, Dina",NV,Representative,1st,D,https://titus.house.gov/,(202) 225-5965,,2370 RHOB
+"Amodei, Mark",NV,Representative,2nd,R,https://amodei.house.gov,(202) 225-6155,,104 CHOB
+"Lee, Susie",NV,Representative,3rd,D,https://susielee.house.gov,(202) 225-3252,,365 CHOB
+"Horsford, Steven",NV,Representative,4th,D,https://horsford.house.gov,(202) 225-9894,,406 CHOB
+"Pappas, Chris",NH,Representative,1st,D,https://pappas.house.gov,(202) 225-5456,,452 CHOB
+"Goodlander, Maggie",NH,Representative,2nd,D,https://goodlander.house.gov/,(202) 225-5206,,223 CHOB
+"Norcross, Donald",NJ,Representative,1st,D,https://norcross.house.gov,(202) 225-6501,,2427 RHOB
+"Van Drew, Jefferson",NJ,Representative,2nd,R,https://vandrew.house.gov,(202) 225-6572,,2447 RHOB
+"Conaway, Herbert",NJ,Representative,3rd,D,https://conaway.house.gov/,(202) 225-4765,,1022 LHOB
+"Smith, Christopher",NJ,Representative,4th,R,https://chrissmith.house.gov/,(202) 225-3765,,2373 RHOB
+"Gottheimer, Josh",NJ,Representative,5th,D,https://gottheimer.house.gov,(202) 225-4465,,106 CHOB
+"Pallone, Frank",NJ,Representative,6th,D,https://pallone.house.gov,(202) 225-4671,,2107 RHOB
+"Kean, Thomas",NJ,Representative,7th,R,https://kean.house.gov,(202) 225-5361,,251 CHOB
+"Menendez, Robert",NJ,Representative,8th,D,https://menendez.house.gov,(202) 225-7919,,2453 RHOB
+"Pou, Nellie",NJ,Representative,9th,D,https://pou.house.gov/,(202) 225-5751,,1007 LHOB
+"McIver, LaMonica",NJ,Representative,10th,D,https://mciver.house.gov/,(202) 225-3436,,426 CHOB
+"Sherrill, Mikie",NJ,Representative,11th,D,https://sherrill.house.gov/,(202) 225-5034,,1427 LHOB
+"Watson Coleman, Bonnie",NJ,Representative,12th,D,https://watsoncoleman.house.gov/,(202) 225-5801,,168 CHOB
+"Stansbury, Melanie",NM,Representative,1st,D,https://stansbury.house.gov/,(202) 225-6316,,1421 LHOB
+"Vasquez, Gabe",NM,Representative,2nd,D,https://vasquez.house.gov,(202) 225-2365,,322 CHOB
+"Leger Fernandez, Teresa",NM,Representative,3rd,D,https://fernandez.house.gov,(202) 225-6190,,2417 RHOB
+"LaLota, Nick",NY,Representative,1st,R,https://lalota.house.gov,(202) 225-3826,,122 CHOB
+"Garbarino, Andrew",NY,Representative,2nd,R,https://garbarino.house.gov,(202) 225-7896,,2344 RHOB
+"Suozzi, Thomas R.",NY,Representative,3rd,D,https://suozzi.house.gov,(202) 225-3335,,203 CHOB
+"Gillen, Laura",NY,Representative,4th,D,https://gillen.house.gov/,(202) 225-5516,,428 CHOB
+"Meeks, Gregory",NY,Representative,5th,D,https://meeks.house.gov,(202) 225-3461,,2310 RHOB
+"Meng, Grace",NY,Representative,6th,D,https://meng.house.gov,(202) 225-2601,,2468 RHOB
+"Velazquez, Nydia",NY,Representative,7th,D,https://velazquez.house.gov,(202) 225-2361,,2302 RHOB
+"Jeffries, Hakeem",NY,Representative,8th,D,https://jeffries.house.gov,(202) 225-5936,,2267 RHOB
+"Clarke, Yvette",NY,Representative,9th,D,https://clarke.house.gov/,(202) 225-6231,,2058 RHOB
+"Goldman, Daniel",NY,Representative,10th,D,https://goldman.house.gov,(202) 225-7944,,245 CHOB
+"Malliotakis, Nicole",NY,Representative,11th,R,https://malliotakis.house.gov,(202) 225-3371,,1124 LHOB
+"Nadler, Jerrold",NY,Representative,12th,D,https://nadler.house.gov,(202) 225-5635,,2132 RHOB
+"Espaillat, Adriano",NY,Representative,13th,D,https://espaillat.house.gov,(202) 225-4365,,2332 RHOB
+"Ocasio-Cortez, Alexandria",NY,Representative,14th,D,https://ocasio-cortez.house.gov/,(202) 225-3965,,250 CHOB
+"Torres, Ritchie",NY,Representative,15th,D,https://ritchietorres.house.gov,(202) 225-4361,,1414 LHOB
+"Latimer, George",NY,Representative,16th,D,https://latimer.house.gov/,(202) 225-2464,,1507 LHOB
+"Lawler, Michael",NY,Representative,17th,R,https://lawler.house.gov,(202) 225-6506,,324 CHOB
+"Ryan, Patrick",NY,Representative,18th,D,https://patryan.house.gov/,(202) 225-5614,,1708 LHOB
+"Riley, Josh",NY,Representative,19th,D,https://riley.house.gov/,(202) 225-5441,,128 CHOB
+"Tonko, Paul",NY,Representative,20th,D,https://tonko.house.gov/,(202) 225-5076,,2269 RHOB
+"Stefanik, Elise",NY,Representative,21st,R,https://stefanik.house.gov/,(202) 225-4611,,2211 RHOB
+"Mannion, John",NY,Representative,22nd,D,https://mannion.house.gov/,(202) 225-3701,,1516 LHOB
+"Langworthy, Nicholas",NY,Representative,23rd,R,https://langworthy.house.gov,(202) 225-3161,,422 CHOB
+"Tenney, Claudia",NY,Representative,24th,R,https://tenney.house.gov/,(202) 225-3665,,2230 RHOB
+"Morelle, Joseph",NY,Representative,25th,D,https://morelle.house.gov,(202) 225-3615,,570 CHOB
+"Kennedy, Timothy",NY,Representative,26th,D,https://kennedy.house.gov,(202) 225-3306,,423 CHOB
+"Davis, Donald",NC,Representative,1st,D,https://dondavis.house.gov,(202) 225-3101,,1123 LHOB
+"Ross, Deborah",NC,Representative,2nd,D,https://ross.house.gov,(202) 225-3032,,1221 LHOB
+"Murphy, Gregory",NC,Representative,3rd,R,https://murphy.house.gov,(202) 225-3415,,407 CHOB
+"Foushee, Valerie",NC,Representative,4th,D,https://foushee.house.gov,(202) 225-1784,,2452 RHOB
+"Foxx, Virginia",NC,Representative,5th,R,https://foxx.house.gov/,(202) 225-2071,,2462 RHOB
+"McDowell, Addison",NC,Representative,6th,R,https://mcdowell.house.gov/,(202) 225-3065,,1032 LHOB
+"Rouzer, David",NC,Representative,7th,R,https://rouzer.house.gov/,(202) 225-2731,,2333 RHOB
+"Harris, Mark",NC,Representative,8th,R,https://markharris.house.gov/,(202) 225-1976,,126 CHOB
+"Hudson, Richard",NC,Representative,9th,R,https://hudson.house.gov,(202) 225-3715,,2112 RHOB
+"Harrigan, Pat",NC,Representative,10th,R,https://harrigan.house.gov/,(202) 225-2576,,1233 LHOB
+"Edwards, Chuck",NC,Representative,11th,R,https://edwards.house.gov,(202) 225-6401,,1505 LHOB
+"Adams, Alma",NC,Representative,12th,D,https://adams.house.gov,(202) 225-1510,,2436 RHOB
+"Knott, Brad",NC,Representative,13th,R,https://knott.house.gov/,(202) 225-4531,,1239 LHOB
+"Moore, Tim",NC,Representative,14th,R,https://timmoore.house.gov/,(202) 225-5634,,1424 LHOB
+"Fedorchak, Julie",ND,Representative,At Large,R,https://fedorchak.house.gov/,(202) 225-2611,,1607 LHOB
+"King-Hinds, Kimberlyn",,Representative,Delegate,R,https://king-hinds.house.gov/,(202) 225-2646,,425 CHOB
+"Landsman, Greg",OH,Representative,1st,D,https://landsman.house.gov,(202) 225-2216,,2244 RHOB
+"Taylor, David",OH,Representative,2nd,R,https://taylor.house.gov/,(202) 225-3164,,325 CHOB
+"Beatty, Joyce",OH,Representative,3rd,D,https://beatty.house.gov,(202) 225-4324,,2079 RHOB
+"Jordan, Jim",OH,Representative,4th,R,https://jordan.house.gov/,(202) 225-2676,,2056 RHOB
+"Latta, Robert",OH,Representative,5th,R,https://latta.house.gov/,(202) 225-6405,,2470 RHOB
+"Rulli, Michael A.",OH,Representative,6th,R,https://rulli.house.gov,(202) 225-5705,,421 CHOB
+"Miller, Max",OH,Representative,7th,R,https://maxmiller.house.gov,(202) 225-3876,,143 CHOB
+"Davidson, Warren",OH,Representative,8th,R,https://davidson.house.gov/,(202) 225-6205,,2113 RHOB
+"Kaptur, Marcy",OH,Representative,9th,D,https://kaptur.house.gov/,(202) 225-4146,,2314 RHOB
+"Turner, Michael",OH,Representative,10th,R,https://turner.house.gov/,(202) 225-6465,,2183 RHOB
+"Brown, Shontel",OH,Representative,11th,D,https://shontelbrown.house.gov,(202) 225-7032,,2455 RHOB
+"Balderson, Troy",OH,Representative,12th,R,https://balderson.house.gov,(202) 225-5355,,2429 RHOB
+"Sykes, Emilia",OH,Representative,13th,D,https://sykes.house.gov,(202) 225-6265,,1217 LHOB
+"Joyce, David",OH,Representative,14th,R,https://joyce.house.gov,(202) 225-5731,,2065 RHOB
+"Carey, Mike",OH,Representative,15th,R,https://carey.house.gov,(202) 225-2015,,1433 LHOB
+"Hern, Kevin",OK,Representative,1st,R,https://hern.house.gov,(202) 225-2211,,171 CHOB
+"Brecheen, Josh",OK,Representative,2nd,R,https://brecheen.house.gov,(202) 225-2701,,351 CHOB
+"Lucas, Frank",OK,Representative,3rd,R,https://lucas.house.gov,(202) 225-5565,,2405 RHOB
+"Cole, Tom",OK,Representative,4th,R,https://cole.house.gov,(202) 225-6165,,2207 RHOB
+"Bice, Stephanie",OK,Representative,5th,R,https://bice.house.gov,(202) 225-2132,,2402 RHOB
+"Bonamici, Suzanne",OR,Representative,1st,D,https://bonamici.house.gov,(202) 225-0855,,2231 RHOB
+"Bentz, Cliff",OR,Representative,2nd,R,https://bentz.house.gov,(202) 225-6730,,409 CHOB
+"Dexter, Maxine",OR,Representative,3rd,D,https://dexter.house.gov/,(202) 225-4811,,1207 LHOB
+"Hoyle, Val",OR,Representative,4th,D,https://hoyle.house.gov,(202) 225-6416,,1620 LHOB
+"Bynum, Janelle",OR,Representative,5th,D,https://bynum.house.gov/,(202) 225-5711,,1508 LHOB
+"Salinas, Andrea",OR,Representative,6th,D,https://salinas.house.gov,(202) 225-5643,,403 CHOB
+"Fitzpatrick, Brian",PA,Representative,1st,R,https://fitzpatrick.house.gov/,(202) 225-4276,,271 CHOB
+"Boyle, Brendan",PA,Representative,2nd,D,https://boyle.house.gov/,(202) 225-6111,,1502 LHOB
+"Evans, Dwight",PA,Representative,3rd,D,https://evans.house.gov/,(202) 225-4001,,1105 LHOB
+"Dean, Madeleine",PA,Representative,4th,D,https://dean.house.gov,(202) 225-4731,,150 CHOB
+"Scanlon, Mary Gay",PA,Representative,5th,D,https://scanlon.house.gov/,(202) 225-2011,,1214 LHOB
+"Houlahan, Chrissy",PA,Representative,6th,D,https://houlahan.house.gov/,(202) 225-4315,,1727 LHOB
+"Mackenzie, Ryan",PA,Representative,7th,R,https://mackenzie.house.gov/,(202) 225-6411,,121 CHOB
+"Bresnahan, Robert",PA,Representative,8th,R,https://bresnahan.house.gov/,(202) 225-5546,,1133 LHOB
+"Meuser, Daniel",PA,Representative,9th,R,https://meuser.house.gov,(202) 225-6511,,350 CHOB
+"Perry, Scott",PA,Representative,10th,R,https://perry.house.gov/,(202) 225-5836,,2160 RHOB
+"Smucker, Lloyd",PA,Representative,11th,R,https://smucker.house.gov/,(202) 225-2411,,302 CHOB
+"Lee, Summer",PA,Representative,12th,D,https://summerlee.house.gov,(202) 225-2135,,2437 RHOB
+"Joyce, John",PA,Representative,13th,R,https://johnjoyce.house.gov/,(202) 225-2431,,2102 RHOB
+"Reschenthaler, Guy",PA,Representative,14th,R,https://reschenthaler.house.gov/,(202) 225-2065,,2209 RHOB
+"Thompson, Glenn",PA,Representative,15th,R,https://thompson.house.gov,(202) 225-5121,,400 CHOB
+"Kelly, Mike",PA,Representative,16th,R,https://kelly.house.gov,(202) 225-5406,,1707 LHOB
+"Deluzio, Christopher",PA,Representative,17th,D,https://deluzio.house.gov,(202) 225-2301,,1222 LHOB
+"Hernandez, Pablo",,Representative,Resident Commissioner,D,https://hernandez.house.gov/,(202) 225-2615,,1419 LHOB
+"Amo, Gabe",RI,Representative,1st,D,https://amo.house.gov,(202) 225-4911,,1119 LHOB
+"Magaziner, Seth",RI,Representative,2nd,D,https://magaziner.house.gov,(202) 225-2735,,252 CHOB
+"Mace, Nancy",SC,Representative,1st,R,https://mace.house.gov,(202) 225-3176,,1728 LHOB
+"Wilson, Joe",SC,Representative,2nd,R,https://joewilson.house.gov/,(202) 225-2452,,1436 LHOB
+"Biggs, Sheri",SC,Representative,3rd,R,https://sheribiggs.house.gov/,(202) 225-5301,,1530 LHOB
+"Timmons, William",SC,Representative,4th,R,https://timmons.house.gov/,(202) 225-6030,,267 CHOB
+"Norman, Ralph",SC,Representative,5th,R,https://norman.house.gov,(202) 225-5501,,569 CHOB
+"Clyburn, James",SC,Representative,6th,D,https://clyburn.house.gov/,(202) 225-3315,,274 CHOB
+"Fry, Russell",SC,Representative,7th,R,https://fry.house.gov,(202) 225-9895,,345 CHOB
+"Johnson, Dusty",SD,Representative,At Large,R,https://dustyjohnson.house.gov/,(202) 225-2801,,1714 LHOB
+"Harshbarger, Diana",TN,Representative,1st,R,https://harshbarger.house.gov,(202) 225-6356,,167 CHOB
+"Burchett, Tim",TN,Representative,2nd,R,https://burchett.house.gov,(202) 225-5435,,1122 LHOB
+"Fleischmann, Charles",TN,Representative,3rd,R,https://fleischmann.house.gov/,(202) 225-3271,,2187 RHOB
+"DesJarlais, Scott",TN,Representative,4th,R,https://desjarlais.house.gov/,(202) 225-6831,,2304 RHOB
+"Ogles, Andrew",TN,Representative,5th,R,https://ogles.house.gov,(202) 225-4311,,151 CHOB
+"Rose, John",TN,Representative,6th,R,https://johnrose.house.gov/,(202) 225-4231,,2238 RHOB
+"Green, Mark",TN,Representative,7th,R,https://markgreen.house.gov/,(202) 225-2811,,2446 RHOB
+"Kustoff, David",TN,Representative,8th,R,https://kustoff.house.gov,(202) 225-4714,,560 CHOB
+"Cohen, Steve",TN,Representative,9th,D,https://cohen.house.gov/,(202) 225-3265,,2268 RHOB
+"Moran, Nathaniel",TX,Representative,1st,R,https://moran.house.gov,(202) 225-3035,,1605 LHOB
+"Crenshaw, Dan",TX,Representative,2nd,R,https://crenshaw.house.gov/,(202) 225-6565,,248 CHOB
+"Self, Keith",TX,Representative,3rd,R,https://keithself.house.gov,(202) 225-4201,,1030 LHOB
+"Fallon, Pat",TX,Representative,4th,R,https://fallon.house.gov,(202) 225-6673,,2416 RHOB
+"Gooden, Lance",TX,Representative,5th,R,https://gooden.house.gov,(202) 225-3484,,2431 RHOB
+"Ellzey, Jake",TX,Representative,6th,R,https://ellzey.house.gov/,(202) 225-2002,,1721 LHOB
+"Fletcher, Lizzie",TX,Representative,7th,D,https://fletcher.house.gov,(202) 225-2571,,2004 RHOB
+"Luttrell, Morgan",TX,Representative,8th,R,https://luttrell.house.gov,(202) 225-4901,,444 CHOB
+"Green, Al",TX,Representative,9th,D,https://algreen.house.gov,(202) 225-7508,,2347 RHOB
+"McCaul, Michael",TX,Representative,10th,R,https://mccaul.house.gov,(202) 225-2401,,2300 RHOB
+"Pfluger, August",TX,Representative,11th,R,https://pfluger.house.gov,(202) 225-3605,,2202 RHOB
+"Goldman, Craig",TX,Representative,12th,R,https://craiggoldman.house.gov/,(202) 225-5071,,1716 LHOB
+"Jackson, Ronny",TX,Representative,13th,R,https://jackson.house.gov,(202) 225-3706,,125 CHOB
+"Weber, Randy",TX,Representative,14th,R,https://weber.house.gov,(202) 225-2831,,107 CHOB
+"De La Cruz, Monica",TX,Representative,15th,R,https://delacruz.house.gov,(202) 225-9901,,1415 LHOB
+"Escobar, Veronica",TX,Representative,16th,D,https://escobar.house.gov,(202) 225-4831,,2448 RHOB
+"Sessions, Pete",TX,Representative,17th,R,https://sessions.house.gov,(202) 225-6105,,2204 RHOB
+"Turner, Sylvester- Vacancy",TX,Representative,18th,D,https://clerk.house.gov/members/TX18/vacancy,(202) 225-3816,,1318 LHOB
+"Arrington, Jodey",TX,Representative,19th,R,https://arrington.house.gov,(202) 225-4005,,1111 LHOB
+"Castro, Joaquin",TX,Representative,20th,D,https://castro.house.gov,(202) 225-3236,,2241 RHOB
+"Roy, Chip",TX,Representative,21st,R,https://roy.house.gov,(202) 225-4236,,103 CHOB
+"Nehls, Troy",TX,Representative,22nd,R,https://nehls.house.gov,(202) 225-5951,,1104 LHOB
+"Gonzales, Tony",TX,Representative,23rd,R,https://gonzales.house.gov,(202) 225-4511,,2239 RHOB
+"Van Duyne, Beth",TX,Representative,24th,R,https://vanduyne.house.gov,(202) 225-6605,,1725 LHOB
+"Williams, Roger",TX,Representative,25th,R,https://williams.house.gov,(202) 225-9896,,2336 RHOB
+"Gill, Brandon",TX,Representative,26th,R,https://gill.house.gov/,(202) 225-7772,,1305 LHOB
+"Cloud, Michael",TX,Representative,27th,R,https://cloud.house.gov,(202) 225-7742,,304 CHOB
+"Cuellar, Henry",TX,Representative,28th,D,https://cuellar.house.gov/,(202) 225-1640,,2308 RHOB
+"Garcia, Sylvia",TX,Representative,29th,D,https://sylviagarcia.house.gov/,(202) 225-1688,,2419 RHOB
+"Crockett, Jasmine",TX,Representative,30th,D,https://crockett.house.gov,(202) 225-8885,,1616 LHOB
+"Carter, John",TX,Representative,31st,R,https://carter.house.gov/,(202) 225-3864,,2208 RHOB
+"Johnson, Julie",TX,Representative,32nd,D,https://juliejohnson.house.gov/,(202) 225-2231,,221 CHOB
+"Veasey, Marc",TX,Representative,33rd,D,https://veasey.house.gov,(202) 225-9897,,2186 RHOB
+"Gonzalez, Vicente",TX,Representative,34th,D,https://gonzalez.house.gov,(202) 225-2531,,1201 LHOB
+"Casar, Greg",TX,Representative,35th,D,https://casar.house.gov,(202) 225-5645,,446 CHOB
+"Babin, Brian",TX,Representative,36th,R,https://babin.house.gov,(202) 225-1555,,2236 RHOB
+"Doggett, Lloyd",TX,Representative,37th,D,https://doggett.house.gov,(202) 225-4865,,2307 RHOB
+"Hunt, Wesley",TX,Representative,38th,R,https://hunt.house.gov,(202) 225-5646,,1520 LHOB
+"Moore, Blake",UT,Representative,1st,R,https://blakemoore.house.gov,(202) 225-0453,,1131 LHOB
+"Maloy, Celeste",UT,Representative,2nd,R,https://maloy.house.gov,(202) 225-9730,,249 CHOB
+"Kennedy, Mike",UT,Representative,3rd,R,https://mikekennedy.house.gov/,(202) 225-7751,,1626 LHOB
+"Owens, Burgess",UT,Representative,4th,R,https://owens.house.gov,(202) 225-3011,,309 CHOB
+"Balint, Becca",VT,Representative,At Large,D,https://balint.house.gov,(202) 225-4115,,1510 LHOB
+"Wittman, Robert",VA,Representative,1st,R,https://wittman.house.gov/,(202) 225-4261,,2055 RHOB
+"Kiggans, Jennifer",VA,Representative,2nd,R,https://kiggans.house.gov,(202) 225-4215,,152 CHOB
+"Scott, Robert",VA,Representative,3rd,D,https://bobbyscott.house.gov,(202) 225-8351,,2328 RHOB
+"McClellan, Jennifer",VA,Representative,4th,D,https://mcclellan.house.gov/,(202) 225-6365,,1628 LHOB
+"McGuire, John",VA,Representative,5th,R,https://mcguire.house.gov/,(202) 225-4711,,1013 LHOB
+"Cline, Ben",VA,Representative,6th,R,https://cline.house.gov,(202) 225-5431,,2443 RHOB
+"Vindman, Eugene",VA,Representative,7th,D,https://vindman.house.gov/,(202) 225-2815,,1005 LHOB
+"Beyer, Donald",VA,Representative,8th,D,https://beyer.house.gov,(202) 225-4376,,1226 LHOB
+"Griffith, H.",VA,Representative,9th,R,https://morgangriffith.house.gov/,(202) 225-3861,,2110 RHOB
+"Subramanyam, Suhas",VA,Representative,10th,D,https://subramanyam.house.gov/,(202) 225-5136,,1009 LHOB
+"Connolly, Gerald",VA,Representative,11th,D,https://connolly.house.gov/,(202) 225-1492,,2265 RHOB
+"Plaskett, Stacey",,Representative,Delegate,D,https://plaskett.house.gov/,(202) 225-1790,,2059 RHOB
+"DelBene, Suzan",WA,Representative,1st,D,https://delbene.house.gov,(202) 225-6311,,2311 RHOB
+"Larsen, Rick",WA,Representative,2nd,D,https://larsen.house.gov,(202) 225-2605,,2163 RHOB
+"Perez, Marie",WA,Representative,3rd,D,https://gluesenkampperez.house.gov,(202) 225-3536,,1431 LHOB
+"Newhouse, Dan",WA,Representative,4th,R,https://newhouse.house.gov,(202) 225-5816,,460 CHOB
+"Baumgartner, Michael",WA,Representative,5th,R,https://baumgartner.house.gov/,(202) 225-2006,,124 CHOB
+"Randall, Emily",WA,Representative,6th,D,https://randall.house.gov/,(202) 225-5916,,1531 LHOB
+"Jayapal, Pramila",WA,Representative,7th,D,https://jayapal.house.gov,(202) 225-3106,,2346 RHOB
+"Schrier, Kim",WA,Representative,8th,D,https://schrier.house.gov,(202) 225-7761,,1110 LHOB
+"Smith, Adam",WA,Representative,9th,D,https://adamsmith.house.gov/,(202) 225-8901,,2264 RHOB
+"Strickland, Marilyn",WA,Representative,10th,D,https://strickland.house.gov,(202) 225-9740,,1724 LHOB
+"Miller, Carol",WV,Representative,1st,R,https://miller.house.gov/,(202) 225-3452,,465 CHOB
+"Moore, Riley",WV,Representative,2nd,R,https://rileymoore.house.gov/,(202) 225-2711,,1337 LHOB
+"Steil, Bryan",WI,Representative,1st,R,https://steil.house.gov,(202) 225-3031,,1526 LHOB
+"Pocan, Mark",WI,Representative,2nd,D,https://pocan.house.gov,(202) 225-2906,,1026 LHOB
+"Van Orden, Derrick",WI,Representative,3rd,R,https://vanorden.house.gov,(202) 225-5506,,1513 LHOB
+"Moore, Gwen",WI,Representative,4th,D,https://gwenmoore.house.gov,(202) 225-4572,,2252 RHOB
+"Fitzgerald, Scott",WI,Representative,5th,R,https://fitzgerald.house.gov,(202) 225-5101,,2444 RHOB
+"Grothman, Glenn",WI,Representative,6th,R,https://grothman.house.gov,(202) 225-2476,,1211 LHOB
+"Tiffany, Thomas",WI,Representative,7th,R,https://tiffany.house.gov/,(202) 225-3365,,451 CHOB
+"Wied, Tony",WI,Representative,8th,R,https://wied.house.gov/,(202) 225-5665,,424 CHOB
+"Hageman, Harriet",WY,Representative,At Large,R,https://hageman.house.gov,(202) 225-2311,,1227 LHOB
