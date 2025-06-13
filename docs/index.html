@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Interactive Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congress Call List - Contact Your Representatives</title>
+    <meta name="description" content="Complete contact information for all members of Congress. Find phone numbers, emails, and addresses for Senators and Representatives.">
 
     <!-- DataTables + jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link  href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 
     <!-- Buttons extension -->
@@ -19,176 +21,509 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <style>
+        :root {
+            --primary-color: #1e40af;
+            --primary-dark: #1e3a8a;
+            --secondary-color: #dc2626;
+            --success-color: #059669;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
 
-    <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            line-height: 1.6;
         }
 
+        /* Header Styles */
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 20px;
+            padding: 2rem 1rem;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
         }
 
-        header h2 {
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        header p {
             margin: 0;
-            font-weight: 500;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
         }
 
+        /* Navigation/Stats Bar */
+        .stats-bar {
+            background: var(--card-background);
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Main Content */
         main {
-            padding: 20px;
-            max-width: 1200px;
+            padding: 2rem 1rem;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        label {
-            font-weight: 500;
-            margin-right: 10px;
+        /* Filter Controls */
+        .filter-controls {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            align-items: end;
         }
 
-        select {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            background: white;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .clear-filters-btn {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .clear-filters-btn:hover {
+            background: #b91c1c;
+            transform: translateY(-1px);
+        }
+
+        /* DataTable Enhancements */
+        .table-container {
+            background: var(--card-background);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
         }
 
         table.dataTable {
             width: 100% !important;
             border-collapse: collapse;
-            margin-top: 20px;
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            background-color: transparent;
         }
 
         table.dataTable thead th {
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
             color: white;
-            font-weight: 700;
+            font-weight: 600;
             text-align: left;
-            padding: 10px;
+            padding: 1rem;
+            border: none;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         table.dataTable tbody td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        table.dataTable tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
         }
 
         table.dataTable tbody tr:hover {
-            background-color: #f1f1f1;
+            background-color: #f1f5f9;
         }
 
-        .dataTables_wrapper .dataTables_paginate .paginate_button {
-            padding: 6px 12px;
-            margin: 2px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #fff;
-            color: #333;
+        /* Contact Action Buttons */
+        .contact-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            padding: 0.5rem 0.75rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
             cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
         }
 
-        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-            background-color: #4CAF50;
+        .contact-btn.phone {
+            background: var(--success-color);
             color: white;
+        }
+
+        .contact-btn.phone:hover {
+            background: #047857;
+        }
+
+        .contact-btn.website {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .contact-btn.website:hover {
+            background: var(--primary-dark);
+        }
+
+        .contact-btn.email {
+            background: #7c3aed;
+            color: white;
+        }
+
+        .contact-btn.email:hover {
+            background: #6d28d9;
+        }
+
+        /* Party Badges */
+        .party-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .party-badge.democrat {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .party-badge.republican {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+
+        .party-badge.independent {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+
+        /* Office Type Badges */
+        .office-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .office-badge.senator {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .office-badge.representative {
+            background: #e0e7ff;
+            color: #3730a3;
+        }
+
+        /* DataTable Controls Styling */
+        .dataTables_wrapper .dataTables_length,
+        .dataTables_wrapper .dataTables_filter,
+        .dataTables_wrapper .dataTables_info,
+        .dataTables_wrapper .dataTables_paginate {
+            margin: 1rem;
         }
 
         .dataTables_wrapper .dataTables_filter input {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
+            padding: 0.75rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-left: 0.5rem;
         }
 
         .dataTables_wrapper .dataTables_length select {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
+            padding: 0.5rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            margin: 0 0.5rem;
         }
 
-        footer {
-            background-color: #4CAF50;
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            padding: 0.5rem 1rem;
+            margin: 0 0.25rem;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--card-background);
+            color: var(--text-primary);
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+            background: var(--primary-color);
             color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
         }
 
-        footer p {
-            margin: 0;
-            font-size: 14px;
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            .filter-controls {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            .stats-bar {
+                margin: 0.5rem;
+                padding: 1rem 0.5rem;
+            }
+
+            .stat-item {
+                padding: 0.25rem;
+            }
+
+            .contact-actions {
+                flex-direction: column;
+            }
+
+            .contact-btn {
+                justify-content: center;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
 <header>
-    <h2>Contact List for all of Congress</h2>
-    <h4>Make your voice heard</h4>
+    <h1><i class="fas fa-capitol-building"></i> Congress Call List</h1>
+    <p>Connect with your representatives • Make your voice heard • Democracy in action</p>
 </header>
+
+<div class="stats-bar">
+    <div class="stat-item">
+        <span class="stat-number" id="total-members">535</span>
+        <span class="stat-label">Total Members</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number" id="senators">100</span>
+        <span class="stat-label">Senators</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number" id="representatives">435</span>
+        <span class="stat-label">Representatives</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number" id="states">50</span>
+        <span class="stat-label">States</span>
+    </div>
+</div>
+
 <main>
-    <label for="stateFilter"><strong>Filter by State:</strong></label>
-    <select id="stateFilter">
-        <option value="">All</option>
-    </select>
+    <div class="filter-controls">
+        <div class="filter-group">
+            <label for="stateFilter">Filter by State</label>
+            <select id="stateFilter">
+                <option value="">All States</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="officeFilter">Office Type</label>
+            <select id="officeFilter">
+                <option value="">All Offices</option>
+                <option value="Senator">Senate</option>
+                <option value="Representative">House</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="partyFilter">Political Party</label>
+            <select id="partyFilter">
+                <option value="">All Parties</option>
+                <option value="D">Democrat</option>
+                <option value="R">Republican</option>
+                <option value="I">Independent</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="nameSearch">Search by Name</label>
+            <input type="text" id="nameSearch" placeholder="Enter representative name...">
+        </div>
+        <div class="filter-group">
+            <button class="clear-filters-btn" onclick="clearAllFilters()">
+                <i class="fas fa-times"></i> Clear Filters
+            </button>
+        </div>
+    </div>
 
-    <script>
-        $(document).ready(function () {
-            // Check if DataTable is already initialized
-            if (!$.fn.DataTable.isDataTable('#dataTable')) {
-                var table = $('#dataTable').DataTable({
-                    dom: 'Bfrtip',
-                    "bDestroy": true,
-                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
-                    scrollX: true,
-                    pageLength: 25,
-                });
-
-                // Populate dropdown with unique states
-                table.column(1).data().unique().sort().each(function (d) {
-                    if (d) {
-                        $('#stateFilter').append('<option value="' + d + '">' + d + '</option>');
-                    }
-                });
-
-                // Filter table on dropdown change
-                $('#stateFilter').on('change', function () {
-                    table.column(1).search(this.value).draw();
-                });
-            }
-        });
-    </script>
-
-    <table class="dataframe display nowrap" id="dataTable">
-        <thead>
-            <tr style="text-align: right;">
-                <th>Name</th>
-                <th>State</th>
-                <th>Office</th>
-                <th>District</th>
-                <th>Party</th>
-                <th>Website</th>
-                <th>Phone</th>
-                <th>Email</th>
-                <th>Mailing</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="table-container">
+        <table class="dataframe display nowrap" id="dataTable">            <thead>
+                <tr>
+                    <th>Representative</th>
+                    <th>State</th>
+                    <th>Office</th>
+                    <th>District</th>
+                    <th>Party</th>
+                    <th>Website</th>
+                    <th>Phone</th>
+                    <th>Extra</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Tommy Tuberville</td>
                 <td>AL</td>
@@ -6139,12 +6474,244 @@
                 <td>(202) 225-2311</td>
                 <td>NaN</td>
                 <td>1227 LHOB</td>
-            </tr>
-        </tbody>
+            </tr>        </tbody>
     </table>
+    </div>
 </main>
-<footer>
-    <p>No &copy; All this shit should be free and available</p>
+
+<script>
+$(document).ready(function() {
+    // Enhanced DataTable initialization
+    var table = $('#dataTable').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            {
+                extend: 'copy',
+                className: 'contact-btn',
+                text: '<i class="fas fa-copy"></i> Copy'
+            },
+            {
+                extend: 'csv',
+                className: 'contact-btn',
+                text: '<i class="fas fa-file-csv"></i> CSV'
+            },
+            {
+                extend: 'excel',
+                className: 'contact-btn',
+                text: '<i class="fas fa-file-excel"></i> Excel'
+            },
+            {
+                extend: 'pdf',
+                className: 'contact-btn',
+                text: '<i class="fas fa-file-pdf"></i> PDF'
+            },
+            {
+                extend: 'print',
+                className: 'contact-btn',
+                text: '<i class="fas fa-print"></i> Print'
+            }
+        ],
+        scrollX: true,
+        pageLength: 25,
+        lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],        responsive: true,
+        columnDefs: [
+            {
+                targets: 7, // Hide the Extra column (column with NaN values)
+                visible: false
+            },
+            {
+                targets: 0, // Name column
+                render: function(data, type, row) {
+                    return '<strong>' + data + '</strong>';
+                }
+            },
+            {
+                targets: 2, // Office column
+                render: function(data, type, row) {
+                    var badgeClass = data && data.toLowerCase() === 'senator' ? 'senator' : 'representative';
+                    return '<span class="office-badge ' + badgeClass + '">' + (data || 'N/A') + '</span>';
+                }
+            },
+            {
+                targets: 4, // Party column
+                render: function(data, type, row) {
+                    if (!data || data === 'NaN') return 'N/A';
+                    var party = data.toUpperCase();
+                    var partyClass = party === 'D' ? 'democrat' : party === 'R' ? 'republican' : 'independent';
+                    var partyName = party === 'D' ? 'Democrat' : party === 'R' ? 'Republican' : 'Independent';
+                    return '<span class="party-badge ' + partyClass + '">' + partyName + '</span>';
+                }
+            },
+            {
+                targets: 5, // Website column
+                render: function(data, type, row) {
+                    if (!data || data === 'NaN' || data.trim() === '') {
+                        return 'No website available';
+                    }
+                    return '<a href="' + data + '" target="_blank" class="contact-btn website" title="Visit ' + row[0] + '\'s website">' +
+                           '<i class="fas fa-external-link-alt"></i> Website</a>';
+                }
+            },
+            {
+                targets: 6, // Phone column
+                render: function(data, type, row) {
+                    if (!data || data === 'NaN' || data.trim() === '') {
+                        return 'No phone available';
+                    }
+                    var phone = data.replace(/[^\d]/g, '');
+                    if (phone.length >= 10) {
+                        return '<a href="tel:+1' + phone + '" class="contact-btn phone" title="Call ' + row[0] + '">' +
+                               '<i class="fas fa-phone"></i> ' + data + '</a>';
+                    }
+                    return data;
+                }
+            },
+            {
+                targets: 8, // Address column (now column 8 since we're hiding column 7)
+                render: function(data, type, row) {
+                    var address = data && data !== 'NaN' && data.trim() !== '' ? data : 'Address not available';
+                    return '<span class="tooltip" data-tooltip="' + address + '">' +
+                           '<i class="fas fa-map-marker-alt"></i> ' + 
+                           (address.length > 30 ? address.substring(0, 30) + '...' : address) +
+                           '</span>';
+                }
+            }
+        ],
+        order: [[0, 'asc']] // Sort by name initially
+    });
+
+    // Populate filter dropdowns
+    populateFilters(table);
+
+    // Custom filter functions
+    setupCustomFilters(table);
+
+    // Update stats
+    updateStats(table);
+});
+
+function populateFilters(table) {
+    // State filter
+    var states = [];
+    table.column(1).data().unique().sort().each(function(d) {
+        if (d && d.trim() !== '') {
+            states.push(d);
+        }
+    });
+    
+    states.forEach(function(state) {
+        $('#stateFilter').append('<option value="' + state + '">' + getStateName(state) + ' (' + state + ')</option>');
+    });
+}
+
+function setupCustomFilters(table) {
+    // State filter
+    $('#stateFilter').on('change', function() {
+        table.column(1).search(this.value).draw();
+        updateStats(table);
+    });
+
+    // Office filter
+    $('#officeFilter').on('change', function() {
+        table.column(2).search(this.value).draw();
+        updateStats(table);
+    });
+
+    // Party filter
+    $('#partyFilter').on('change', function() {
+        table.column(4).search(this.value).draw();
+        updateStats(table);
+    });
+
+    // Name search
+    $('#nameSearch').on('keyup', function() {
+        table.column(0).search(this.value).draw();
+        updateStats(table);
+    });
+}
+
+function clearAllFilters() {
+    $('#stateFilter').val('');
+    $('#officeFilter').val('');
+    $('#partyFilter').val('');
+    $('#nameSearch').val('');
+    
+    var table = $('#dataTable').DataTable();
+    table.search('').columns().search('').draw();
+    updateStats(table);
+}
+
+function updateStats(table) {
+    var info = table.page.info();
+    var visibleData = table.rows({search: 'applied'}).data();
+    
+    var stats = {
+        total: visibleData.length,
+        senators: 0,
+        representatives: 0,
+        states: new Set()
+    };
+    
+    visibleData.each(function(row) {
+        if (row[2] === 'Senator') {
+            stats.senators++;
+        } else if (row[2] === 'Representative') {
+            stats.representatives++;
+        }
+        if (row[1]) {
+            stats.states.add(row[1]);
+        }
+    });
+    
+    $('#total-members').text(stats.total);
+    $('#senators').text(stats.senators);
+    $('#representatives').text(stats.representatives);
+    $('#states').text(stats.states.size);
+}
+
+function getStateName(abbr) {
+    var states = {
+        'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
+        'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
+        'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
+        'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+        'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
+        'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
+        'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
+        'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
+        'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
+        'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming',
+        'DC': 'District of Columbia'
+    };
+    return states[abbr] || abbr;
+}
+
+// Analytics and tracking (optional)
+function trackAction(action, details) {
+    console.log('Action:', action, 'Details:', details);
+    // Add your analytics tracking here if needed
+}
+
+// Add click tracking for contact buttons
+$(document).on('click', '.contact-btn', function() {
+    var action = $(this).hasClass('phone') ? 'phone_call' : 
+                 $(this).hasClass('website') ? 'website_visit' : 'email_send';
+    trackAction(action, {
+        representative: $(this).closest('tr').find('td:first').text(),
+        contact_method: action
+    });
+});
+</script>
+
+<footer style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white; text-align: center; padding: 2rem 1rem; margin-top: 3rem;">
+    <p style="margin: 0; font-size: 1rem; opacity: 0.9;">
+        <i class="fas fa-heart" style="color: #ef4444;"></i> 
+        Built for democracy • Open source • Free for all citizens
+    </p>
+    <p style="margin: 0.5rem 0 0 0; font-size: 0.875rem; opacity: 0.7;">
+        Last updated: June 2025 • Contact data from official sources
+    </p>
 </footer>
+
 </body>
 </html>
