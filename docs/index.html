@@ -496,7 +496,7 @@
     </div>
     <div class="stat-item">
         <span class="stat-number" id="states">50</span>
-        <span class="stat-label">States</span>
+        <span class="stat-label">States/Terretories</span>
     </div>
 </div>
 
@@ -1741,7 +1741,7 @@
             </tr>
             <tr>
                 <td>Radewagen, Aumua Amata</td>
-                <td>NaN</td>
+                <td>American Samoa</td>
                 <td>Representative</td>
                 <td>Delegate</td>
                 <td>R</td>
@@ -2742,7 +2742,7 @@
             </tr>
             <tr>
                 <td>Webster, Daniel</td>
-                <<td>FL</td>
+                <td>FL</td>
                 <td>Representative</td>
                 <td>11th</td>
                 <td>R</td>
@@ -2775,7 +2775,7 @@
             </tr>
             <tr>
                 <td>Castor, Kathy</td>
-                <<td>FL</td>
+                <td>FL</td>
                 <td>Representative</td>
                 <td>14th</td>
                 <td>D</td>
@@ -2819,7 +2819,7 @@
             </tr>
             <tr>
                 <td>Franklin, Scott</td>
-                <<td>FL</td>
+                <td>FL</td>
                 <td>Representative</td>
                 <td>18th</td>
                 <td>R</td>
@@ -2940,7 +2940,7 @@
             </tr>
             <tr>
                 <td>Carter, Earl</td>
-                <<td>GA</td>
+                <td>GA</td>
                 <td>Representative</td>
                 <td>1st</td>
                 <td>R</td>
@@ -2973,7 +2973,7 @@
             </tr>
             <tr>
                 <td>Johnson, Henry</td>
-                <<td>GA</td>
+                <td>GA</td>
                 <td>Representative</td>
                 <td>4th</td>
                 <td>D</td>
@@ -3094,7 +3094,7 @@
             </tr>
             <tr>
                 <td>Moylan, James</td>
-                <td>NaN</td>
+                <td>Guam</td>
                 <td>Representative</td>
                 <td>Delegate</td>
                 <td>R</td>
@@ -4964,7 +4964,7 @@
             </tr>
             <tr>
                 <td>King-Hinds, Kimberlyn</td>
-                <td>NaN</td>
+                <td>Northern Mariana Islands</td>
                 <td>Representative</td>
                 <td>Delegate</td>
                 <td>R</td>
@@ -5448,7 +5448,7 @@
             </tr>
             <tr>
                 <td>Hernandez, Pablo</td>
-                <td>NaN</td>
+                <td>Puerto Rico</td>
                 <td>Representative</td>
                 <td>Resident Commissioner</td>
                 <td>D</td>
@@ -6262,7 +6262,7 @@
             </tr>
             <tr>
                 <td>Plaskett, Stacey</td>
-                <td>NaN</td>
+                <td>U.S. Virgin Islands</td>
                 <td>Representative</td>
                 <td>Delegate</td>
                 <td>D</td>
@@ -6551,22 +6551,32 @@ $(document).ready(function() {
                 render: function(data, type, row) {
                     return '<strong>' + data + '</strong>';
                 }
-            },
-            {
+            },            {
                 targets: 2, // Office column
                 render: function(data, type, row) {
+                    // For search and type operations, return original data
+                    if (type === 'search' || type === 'type') {
+                        return data || '';
+                    }
+                    
+                    // For display, return formatted HTML
                     var badgeClass = data && data.toLowerCase() === 'senator' ? 'senator' : 'representative';
                     return '<span class="office-badge ' + badgeClass + '">' + (data || 'N/A') + '</span>';
                 }
-            },
-            {
+            },{
                 targets: 4, // Party column
                 render: function(data, type, row) {
+                    // For search and type operations, return original data
+                    if (type === 'search' || type === 'type') {
+                        return data || '';
+                    }
+                    
+                    // For display, return formatted HTML
                     if (!data || data === 'NaN') return 'N/A';
                     var party = data.toUpperCase();
                     var partyClass = party === 'D' ? 'democrat' : party === 'R' ? 'republican' : 'independent';
                     var partyName = party === 'D' ? 'Democrat' : party === 'R' ? 'Republican' : 'Independent';
-                    return '<span class="party-badge ' + partyClass + '">' + partyName + '</span>';
+                    return '<span class="party-badge ' + partyClass + '">' + party + '</span>';
                 }
             },
             {
@@ -6632,28 +6642,84 @@ function populateFilters(table) {
 }
 
 function setupCustomFilters(table) {
+    // Store current filter values
+    var currentFilters = {
+        state: '',
+        office: '',
+        party: '',
+        name: ''
+    };    // Combined filter function
+    function createCombinedFilter() {
+        // Remove existing custom filters
+        $.fn.dataTable.ext.search = $.fn.dataTable.ext.search.filter(function(fn) {
+            return !fn.congressFilter;
+        });        // Add new combined filter if any filters are active
+        if (currentFilters.state || currentFilters.office || currentFilters.party || currentFilters.name) {
+            $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+                // Only apply to our table
+                if (settings.nTable.id !== 'dataTable') {
+                    return true;
+                }
+                
+                // Check state filter (data[1] is the state column)
+                if (currentFilters.state && data[1] !== currentFilters.state) {
+                    return false;
+                }
+                
+                // Check office filter (data[2] is the office column)
+                if (currentFilters.office && data[2] !== currentFilters.office) {
+                    return false;
+                }
+                  // Check party filter (data[4] is the party column)
+                if (currentFilters.party) {
+                    var partyData = data[4];
+                    // If it's HTML, extract the text content
+                    if (partyData && partyData.indexOf('<') !== -1) {
+                        var tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = partyData;
+                        partyData = tempDiv.textContent || tempDiv.innerText || '';                    }
+                    if (partyData !== currentFilters.party) {
+                        return false;
+                    }
+                }
+                
+                // Check name filter (data[0] is the name column)
+                if (currentFilters.name && data[0].toLowerCase().indexOf(currentFilters.name.toLowerCase()) === -1) {
+                    return false;
+                }
+                
+                return true;
+            });
+            
+            // Mark this function so we can remove it later
+            $.fn.dataTable.ext.search[$.fn.dataTable.ext.search.length - 1].congressFilter = true;
+        }
+        
+        // Redraw the table
+        table.draw();
+        updateStats(table);
+    }
+
     // State filter
     $('#stateFilter').on('change', function() {
-        table.column(1).search(this.value).draw();
-        updateStats(table);
+        currentFilters.state = this.value;
+        createCombinedFilter();
     });
 
     // Office filter
     $('#officeFilter').on('change', function() {
-        table.column(2).search(this.value).draw();
-        updateStats(table);
-    });
-
-    // Party filter
+        currentFilters.office = this.value;
+        createCombinedFilter();
+    });    // Party filter
     $('#partyFilter').on('change', function() {
-        table.column(4).search(this.value).draw();
-        updateStats(table);
+        currentFilters.party = this.value;
+        createCombinedFilter();
     });
 
     // Name search
     $('#nameSearch').on('keyup', function() {
-        table.column(0).search(this.value).draw();
-        updateStats(table);
+        currentFilters.name = this.value;
+        createCombinedFilter();
     });
 }
 
@@ -6664,6 +6730,12 @@ function clearAllFilters() {
     $('#nameSearch').val('');
     
     var table = $('#dataTable').DataTable();
+    
+    // Clear custom search functions
+    $.fn.dataTable.ext.search = $.fn.dataTable.ext.search.filter(function(fn) {
+        return !fn.congressFilter;
+    });
+    
     table.search('').columns().search('').draw();
     updateStats(table);
 }
