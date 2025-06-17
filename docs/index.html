@@ -80,14 +80,32 @@
             font-weight: 700;
             position: relative;
             z-index: 1;
-        }
-
-        header p {
+        }        header p {
             margin: 0;
             font-size: 1.1rem;
             opacity: 0.9;
             position: relative;
             z-index: 1;
+        }
+
+        /* Navigation Styles */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.5);
+            transform: translateY(-1px);
         }
 
         /* Navigation/Stats Bar */
@@ -452,6 +470,15 @@
 <header>
     <h1><i class="fas fa-capitol-building"></i> Congress Call List</h1>
     <p>Connect with your representatives • Make your voice heard • Democracy in action</p>
+    
+    <nav style="margin-top: 1.5rem;">
+        <a href="index.html" style="color: white; text-decoration: none; margin: 0 1rem; padding: 0.5rem 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 6px; transition: all 0.2s ease;">
+            <i class="fas fa-home"></i> Directory
+        </a>
+        <a href="call-scripts.html" style="color: white; text-decoration: none; margin: 0 1rem; padding: 0.5rem 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 6px; transition: all 0.2s ease;">
+            <i class="fas fa-phone-alt"></i> Call Scripts
+        </a>
+    </nav>
 </header>
 
 <div class="stats-bar">
