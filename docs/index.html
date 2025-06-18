@@ -480,7 +480,7 @@
 <body>
 <header>
     <h1><i class="fas fa-capitol-building"></i> Congress Call List</h1>
-    <p>Connect with your representatives • Make your voice heard • Democracy in action</p>
+    <p>Connect with ALL representatives • Make your voice heard • Democracy in action</p>
     
     <nav style="margin-top: 1.5rem;">
         <a href="index.html" style="color: white; text-decoration: none; margin: 0 1rem; padding: 0.5rem 1rem; border: 2px solid rgba(255,255,255,0.3); border-radius: 6px; transition: all 0.2s ease;">
@@ -6652,104 +6652,101 @@ function populateFilters(table) {
     });
 }
 
+
 function setupCustomFilters(table) {
-    // Store current filter values
-    var currentFilters = {
-        state: '',
-        office: '',
-        party: '',
-        name: ''
-    };    // Combined filter function
-    function createCombinedFilter() {
-        // Remove existing custom filters
-        $.fn.dataTable.ext.search = $.fn.dataTable.ext.search.filter(function(fn) {
-            return !fn.congressFilter;
-        });        // Add new combined filter if any filters are active
-        if (currentFilters.state || currentFilters.office || currentFilters.party || currentFilters.name) {
-            $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
-                // Only apply to our table
-                if (settings.nTable.id !== 'dataTable') {
-                    return true;
-                }
-                
-                // Check state filter (data[1] is the state column)
-                if (currentFilters.state && data[1] !== currentFilters.state) {
-                    return false;
-                }
-                
-                // Check office filter (data[2] is the office column)
-                if (currentFilters.office && data[2] !== currentFilters.office) {
-                    return false;
-                }
-                  // Check party filter (data[4] is the party column)
-                if (currentFilters.party) {
-                    var partyData = data[4];
-                    // If it's HTML, extract the text content
-                    if (partyData && partyData.indexOf('<') !== -1) {
-                        var tempDiv = document.createElement('div');
-                        tempDiv.innerHTML = partyData;
-                        partyData = tempDiv.textContent || tempDiv.innerText || '';                    }
-                    if (partyData !== currentFilters.party) {
-                        return false;
-                    }
-                }
-                
-                // Check name filter (data[0] is the name column)
-                if (currentFilters.name && data[0].toLowerCase().indexOf(currentFilters.name.toLowerCase()) === -1) {
-                    return false;
-                }
-                
+    // Custom search function to handle combined filters
+    $.fn.dataTable.ext.search.push(
+        function(settings, data, dataIndex) {
+            // Only apply to our specific table
+            if (settings.nTable !== table.table().node()) {
                 return true;
-            });
-            
-            // Mark this function so we can remove it later
-            $.fn.dataTable.ext.search[$.fn.dataTable.ext.search.length - 1].congressFilter = true;
+            }
+
+            var stateFilter = $('#stateFilter').val();
+            var officeFilter = $('#officeFilter').val();
+            var partyFilter = $('#partyFilter').val();
+            var nameFilter = $('#nameSearch').val().toLowerCase();            // Extract data values
+            var name = data[0] || '';
+            var state = data[1] || '';
+            var office = data[2] || '';
+            var party = data[4] || '';
+
+            // Extract office value from HTML if present
+            if (office.includes('<span')) {
+                var tempDiv = document.createElement('div');
+                tempDiv.innerHTML = office;
+                office = tempDiv.textContent || tempDiv.innerText || '';
+            }
+            office = office.trim();
+
+            // Extract party value from HTML if present
+            if (party.includes('<span')) {
+                var tempDiv = document.createElement('div');
+                tempDiv.innerHTML = party;
+                party = tempDiv.textContent || tempDiv.innerText || '';
+            }
+            party = party.trim();
+
+            // Apply filters
+            if (stateFilter && state !== stateFilter) {
+                return false;
+            }
+
+            if (officeFilter && office !== officeFilter) {
+                return false;
+            }
+
+            if (partyFilter && party !== partyFilter) {
+                return false;
+            }
+
+            if (nameFilter && !name.toLowerCase().includes(nameFilter)) {
+                return false;
+            }
+
+            return true;
         }
-        
-        // Redraw the table
-        table.draw();
-        updateStats(table);
-    }
+    );
 
     // State filter
     $('#stateFilter').on('change', function() {
-        currentFilters.state = this.value;
-        createCombinedFilter();
+        table.draw();
+        updateStats(table);
     });
 
     // Office filter
     $('#officeFilter').on('change', function() {
-        currentFilters.office = this.value;
-        createCombinedFilter();
-    });    // Party filter
+        table.draw();
+        updateStats(table);
+    });
+
+    // Party filter
     $('#partyFilter').on('change', function() {
-        currentFilters.party = this.value;
-        createCombinedFilter();
+        table.draw();
+        updateStats(table);
     });
 
     // Name search
     $('#nameSearch').on('keyup', function() {
-        currentFilters.name = this.value;
-        createCombinedFilter();
+        table.draw();
+        updateStats(table);
     });
 }
 
 function clearAllFilters() {
+    // Clear all filter dropdown values
     $('#stateFilter').val('');
     $('#officeFilter').val('');
     $('#partyFilter').val('');
     $('#nameSearch').val('');
     
-    var table = $('#dataTable').DataTable();
+    // Redraw the table to apply the cleared filters
+    $('#dataTable').DataTable().draw();
     
-    // Clear custom search functions
-    $.fn.dataTable.ext.search = $.fn.dataTable.ext.search.filter(function(fn) {
-        return !fn.congressFilter;
-    });
-    
-    table.search('').columns().search('').draw();
-    updateStats(table);
+    // Update stats
+    updateStats($('#dataTable').DataTable());
 }
+
 
 function updateStats(table) {
     var info = table.page.info();
