@@ -1,5 +1,6 @@
 # Bill documents - these are large XML files that don't need to be in the repo
 bills/
+agent-docs/
 
 # OS generated files
 .DS_Store
@@ -31,3 +32,6 @@ node_modules/
 
 # Logs
 *.log
+
+# Agent documentation (not tracked)
+docs/agent-docs/
