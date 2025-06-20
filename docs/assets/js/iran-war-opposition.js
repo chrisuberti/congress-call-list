@@ -366,4 +366,5 @@ document.addEventListener('DOMContentLoaded', function() {
             page_title: 'Stop Israeli Strikes on Iran'
         });
     }
+    loadHeader('Stop Israeli Strikes on Iran', 'Demand Congressional authorization • End US military support for attacks', 'fas fa-exclamation-triangle');
 });

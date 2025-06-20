@@ -25,12 +25,77 @@ function trackAction(action, details = {}) {
     }
 }
 
-// Create shared header HTML for each page
-function createHeader(title, subtitle, icon = 'fas fa-phone-alt') {
+// Load shared header from template file
+function loadHeader(title, subtitle, icon = 'fas fa-phone-alt') {
+    // Check if header already exists
+    let headerContainer = document.querySelector('header');
+    if (headerContainer) {
+        console.log('Header already exists, updating title only');
+        updateHeaderContent(headerContainer, title, subtitle, icon);
+        
+        // Initialize navigation after update
+        setTimeout(() => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            initializeNavigation(currentPage);
+        }, 50);
+    } else {
+        console.log('Loading header from template');
+        // Load header template from file
+        fetch('assets/includes/header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(html => {
+                // Insert the header HTML at beginning of body
+                document.body.insertAdjacentHTML('afterbegin', html);
+                
+                // Update the content with page-specific values
+                const headerElement = document.querySelector('header');
+                updateHeaderContent(headerElement, title, subtitle, icon);
+                
+                // Initialize navigation after header is loaded
+                setTimeout(() => {
+                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                    initializeNavigation(currentPage);
+                }, 50);
+            })
+            .catch(error => {
+                console.error('Error loading header template:', error);
+                // Fallback: create header with inline HTML
+                const fallbackHTML = createFallbackHeader(title, subtitle, icon);
+                document.body.insertAdjacentHTML('afterbegin', fallbackHTML);
+                
+                // Initialize navigation with fallback
+                setTimeout(() => {
+                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                    initializeNavigation(currentPage);
+                }, 50);
+            });
+    }
+}
+
+// Update header content with page-specific values
+function updateHeaderContent(headerElement, title, subtitle, icon) {
+    const titleElement = headerElement.querySelector('#page-title');
+    const subtitleElement = headerElement.querySelector('#page-subtitle');
+    
+    if (titleElement) {
+        titleElement.innerHTML = `<i class="${icon}"></i> ${title}`;
+    }
+    if (subtitleElement) {
+        subtitleElement.textContent = subtitle;
+    }
+}
+
+// Fallback header creation (used if template file can't be loaded)
+function createFallbackHeader(title, subtitle, icon = 'fas fa-phone-alt') {
     return `
     <header>
-        <h1><i class="${icon}"></i> ${title}</h1>
-        <p>${subtitle}</p>
+        <h1 id="page-title"><i class="${icon}"></i> ${title}</h1>
+        <p id="page-subtitle">${subtitle}</p>
         <nav style="margin-top: 1.5rem;">
             <a href="index.html">
                 <i class="fas fa-home"></i> Directory
@@ -43,35 +108,6 @@ function createHeader(title, subtitle, icon = 'fas fa-phone-alt') {
             </a>
         </nav>
     </header>`;
-}
-
-// Load shared header
-function loadHeader(title, subtitle, icon = 'fas fa-phone-alt') {
-    // Check if header already exists
-    let headerContainer = document.querySelector('header');
-    if (headerContainer) {
-        console.log('Header already exists, updating title only');
-        const titleElement = headerContainer.querySelector('h1');
-        const subtitleElement = headerContainer.querySelector('p');
-        
-        if (titleElement) {
-            titleElement.innerHTML = `<i class="${icon}"></i> ${title}`;
-        }
-        if (subtitleElement) {
-            subtitleElement.textContent = subtitle;
-        }
-    } else {
-        console.log('Creating new header');
-        // Create header and insert at beginning of body
-        const headerHTML = createHeader(title, subtitle, icon);
-        document.body.insertAdjacentHTML('afterbegin', headerHTML);
-    }
-    
-    // Initialize navigation after header is ready
-    setTimeout(() => {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        initializeNavigation(currentPage);
-    }, 50);
 }
 
 // Enhanced navigation management with debugging

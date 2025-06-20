@@ -198,4 +198,6 @@ document.addEventListener('DOMContentLoaded', function() {
             page_title: 'Call Scripts'
         });
     }
+    loadHeader('Call Scripts', 'Ready-to-use scripts to contact your representatives • Stand up for your values', 'fas fa-phone-alt');
+
 });

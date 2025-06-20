@@ -112,13 +112,16 @@ $(document).ready(function() {
     });
 
     // Populate filter dropdowns
-    populateFilters(table);
-
-    // Custom filter functions
+    populateFilters(table);    // Custom filter functions
     setupCustomFilters(table);
 
     // Update stats
     updateStats(table);
+    
+    // Load shared header for index page
+    if (typeof loadHeader === 'function') {
+        loadHeader('Congress Call List', 'Contact your representatives • Make your voice heard', 'fas fa-home');
+    }
 });
 
 function populateFilters(table) {
@@ -302,11 +305,14 @@ $(document).on('click', '.contact-btn', function() {
     var action = $(this).hasClass('phone') ? 'phone_call' : 
                  $(this).hasClass('website') ? 'website_visit' : 'email_send';
     
-    // Use trackEvent from common.js
-    if (typeof trackEvent === 'function') {
-        trackEvent(action, 'contact', {
-            representative: $(this).closest('tr').find('td:first').text(),
-            contact_method: action
+    // Use trackAction from common.js (note: changed from trackEvent to trackAction)
+    if (typeof trackAction === 'function') {
+        trackAction(action, {
+            category: 'Contact',
+            label: $(this).closest('tr').find('td:first').text(),
+            custom: {
+                contact_method: action
+            }
         });
     }
 });
