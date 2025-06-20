@@ -4,7 +4,7 @@ Congress Contact Scraper
 Scrapes contact information for U.S. Senators and Representatives from official government websites.
 
 Usage:
-    python scrape_congress_contacts.py [--senate] [--house] [--output-dir DIR] [--dry-run]
+    python scrape_congress_contacts.py [--senate] [--house] [--output-dir DIR] [--dry-run] [--html]
 
 Dependencies:
     - requests
@@ -14,6 +14,7 @@ Dependencies:
 
 Outputs:
     senators_contacts.csv, representatives_contacts.csv (unless --dry-run)
+    senators_contacts.html, representatives_contacts.html (if --html is specified)
 """
 import requests
 from bs4 import BeautifulSoup
@@ -190,6 +191,7 @@ def main():
     parser.add_argument('--house', action='store_true', help='Scrape representatives')
     parser.add_argument('--output-dir', default='.', help='Directory to save CSV files')
     parser.add_argument('--dry-run', action='store_true', help='Print sample data, do not write files')
+    parser.add_argument('--html', action='store_true', help='Also output HTML table fragment for site integration')
     args = parser.parse_args()
     session = get_session()
     os.makedirs(args.output_dir, exist_ok=True)
@@ -208,6 +210,10 @@ def main():
             out_path = os.path.join(args.output_dir, "senators_contacts.csv")
             pd.DataFrame(all_senators).to_csv(out_path, index=False)
             print(f"Saved {out_path} with {len(all_senators)} records.")
+            if args.html:
+                html_path = os.path.join(args.output_dir, "senators_contacts.html")
+                pd.DataFrame(all_senators).to_html(html_path, index=False, classes='dataTable', border=0, escape=False)
+                print(f"Saved {html_path} (HTML table fragment)")
     if args.house:
         representatives = scrape_representatives(session)
         if args.dry_run:
@@ -216,6 +222,10 @@ def main():
             out_path = os.path.join(args.output_dir, "representatives_contacts.csv")
             pd.DataFrame(representatives).to_csv(out_path, index=False)
             print(f"Saved {out_path} with {len(representatives)} records.")
+            if args.html:
+                html_path = os.path.join(args.output_dir, "representatives_contacts.html")
+                pd.DataFrame(representatives).to_html(html_path, index=False, classes='dataTable', border=0, escape=False)
+                print(f"Saved {html_path} (HTML table fragment)")
 
 if __name__ == "__main__":
     main()
