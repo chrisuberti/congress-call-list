@@ -25,30 +25,99 @@ function trackAction(action, details = {}) {
     }
 }
 
-// Navigation management
+// Create shared header HTML for each page
+function createHeader(title, subtitle, icon = 'fas fa-phone-alt') {
+    return `
+    <header>
+        <h1><i class="${icon}"></i> ${title}</h1>
+        <p>${subtitle}</p>
+        <nav style="margin-top: 1.5rem;">
+            <a href="index.html">
+                <i class="fas fa-home"></i> Directory
+            </a>
+            <a href="call-scripts.html">
+                <i class="fas fa-phone-alt"></i> Oppose Big Beautiful Bill
+            </a>
+            <a href="iran-war-opposition.html">
+                <i class="fas fa-dove"></i> Iran War Opposition
+            </a>
+        </nav>
+    </header>`;
+}
+
+// Load shared header
+function loadHeader(title, subtitle, icon = 'fas fa-phone-alt') {
+    // Check if header already exists
+    let headerContainer = document.querySelector('header');
+    if (headerContainer) {
+        console.log('Header already exists, updating title only');
+        const titleElement = headerContainer.querySelector('h1');
+        const subtitleElement = headerContainer.querySelector('p');
+        
+        if (titleElement) {
+            titleElement.innerHTML = `<i class="${icon}"></i> ${title}`;
+        }
+        if (subtitleElement) {
+            subtitleElement.textContent = subtitle;
+        }
+    } else {
+        console.log('Creating new header');
+        // Create header and insert at beginning of body
+        const headerHTML = createHeader(title, subtitle, icon);
+        document.body.insertAdjacentHTML('afterbegin', headerHTML);
+    }
+    
+    // Initialize navigation after header is ready
+    setTimeout(() => {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        initializeNavigation(currentPage);
+    }, 50);
+}
+
+// Enhanced navigation management with debugging
 function initializeNavigation(currentPage) {
+    console.log('Initializing navigation for:', currentPage);
+    
     const navLinks = document.querySelectorAll('nav a');
-    navLinks.forEach(link => {
+    console.log('Found nav links:', navLinks.length);
+    
+    navLinks.forEach((link, index) => {
+        console.log(`Nav link ${index}:`, link.getAttribute('href'), link.textContent.trim());
+        
         // Remove any existing active class
         link.classList.remove('active');
         
         // Add active class to current page
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');
+            console.log('Added active class to:', link.getAttribute('href'));
         }
         
-        // Track navigation clicks
-        link.addEventListener('click', function(e) {
-            trackAction('navigation_click', {
-                category: 'Navigation',
-                label: this.getAttribute('href'),
-                custom: {
-                    from_page: currentPage,
-                    to_page: this.getAttribute('href')
-                }
-            });
-        });
+        // Remove any existing click handlers
+        link.removeEventListener('click', handleNavClick);
+        
+        // Add click handler
+        link.addEventListener('click', handleNavClick);
+        console.log('Added click handler to:', link.getAttribute('href'));
     });
+}
+
+// Separate click handler function
+function handleNavClick(e) {
+    console.log('Nav link clicked:', this.getAttribute('href'));
+    
+    // Track the click
+    trackAction('navigation_click', {
+        category: 'Navigation',
+        label: this.getAttribute('href'),
+        custom: {
+            from_page: window.location.pathname.split('/').pop() || 'index.html',
+            to_page: this.getAttribute('href')
+        }
+    });
+    
+    // Let the browser handle the navigation normally
+    console.log('Allowing normal navigation to:', this.getAttribute('href'));
 }
 
 // Copy text to clipboard utility
@@ -158,6 +227,22 @@ function showNotification(message, type = 'info') {
 
 // Initialize common functionality when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, initializing...');
+    
+    // Check if we should load header dynamically or use existing
+    const existingHeader = document.querySelector('header');
+    if (existingHeader && existingHeader.querySelector('nav')) {
+        console.log('Using existing header');
+        // Initialize navigation with current page
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        initializeNavigation(currentPage);
+    } else {
+        console.log('No existing header found, would load dynamically');
+        // For now, still try to initialize existing navigation
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        setTimeout(() => initializeNavigation(currentPage), 100);
+    }
+    
     // Track page view
     trackAction('page_view', {
         category: 'Page View',
@@ -194,5 +279,6 @@ window.CongressCallList = {
     trackAction,
     initializeNavigation,
     copyToClipboard,
-    showNotification
+    showNotification,
+    loadHeader
 };

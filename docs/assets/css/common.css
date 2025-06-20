@@ -74,6 +74,10 @@ nav a {
     border-radius: 6px;
     transition: all 0.2s ease;
     display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    z-index: 10;
 }
 
 nav a:hover {
@@ -85,6 +89,11 @@ nav a:hover {
 nav a.active {
     background: rgba(255,255,255,0.2);
     border-color: rgba(255,255,255,0.6);
+}
+
+/* Ensure icons inside nav links don't interfere with clicks */
+nav a i {
+    pointer-events: none;
 }
 
 /* Main Content Styles */
